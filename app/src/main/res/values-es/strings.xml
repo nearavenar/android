@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cocktel</string>
+    <string name="title_cocktail">Cocteleria</string>
+    <string name="title_pizza">Pizza</string>
+    <string name="title_coffee">Cafe</string>
+    <string name="title_cocktail_detail">Detalle del trago</string>
+    <string name="ti_search_filter_detail">Buscar...</string>
+    <string name="title_rating_bar_rink">Acidez</string>
+
+    <string name="title_category_rum">Tragos con Ron</string>
+    <string name="coctail_description_ron">
+        "Mojito Clásico.\n""Mojito Maracuyá.\n""Daiquiri.\n""Daiquiri Frutilla y Albahaca.\n""Piña Colada.\n"
+    </string>
+
+    <string name="title_category_pisco">Tragos con Pisco</string>
+    <string name="coctail_description_pisco">
+        "Pisco Sour Clásico.\n""Pisco Sour con albúmina.\n""Pisco Sour Infusionado con té.\n""Pisco Sour Peruano.\n""Pisco Sour con sabor a Albahaca Fresa.\n"
+    </string>
+
+    <string name="title_category_vodka">Tragos con Vodka</string>
+    <string name="coctail_description_vodka">
+        "Cosmopolitan estilo Sex and the City.\n""Moscow Mule desde rusia.\n""Martini Expreso.\n"
+    </string>
+
+    <string name="title_category_tequila">Tragos con Tequila</string>
+    <string name="coctail_description_tequila">
+        "Tequila Sunrise.\n""Tequila Margarita.\n"
+    </string>
+
+    <string name="title_category_whisky">Tragos con Whisky</string>
+    <string name="coctail_description_whisky">
+        "Clavo Oxidado.\n""Manhattan.\n""Old Fashioned on the rock.\n"
+    </string>
+
+    <string name="title_category_ginebra">Tragos con ginebra</string>
+    <string name="coctail_description_ginebra">
+        "Dry martini.\n""Dirty martini.\n""Dry martini Wet.\n"Negroni clásico.\n"
+    </string>
+
+    <string name="title_category_ramazzotti">Tragos con Ramazzotti</string>
+    <string name="coctail_description_ramazzotti">
+        "Ramazzotti clásico.\n""Ramazzotti clásico.\n"
+    </string>
+
+    <string name="title_category_aperol">Tragos con Aperol</string>
+    <string name="coctail_description_aperol">
+        "Aperol Spritz clásico italiano.\n""Aperol Spritz clásico italiano.\n"
+    </string>
+
+
+    <string name="title_category_cachaza">Tragos con Cachaça</string>
+    <string name="coctail_description_cachaza">
+        "Caipirinha brasileña clásica.\n""Caipirinha con vodka.\n""Caipirinha de frutilla.\n"
+    </string>
+
+    <!-- Classic Mojito Drink-->
+    <string name="drink_name_mojito">Mojito Clásico</string>
+    <string name="drink_description_mojito">Este cóctel tan famoso a nivel mundial hace patria de Cuba, el país que lo vio nacer. El mojito es uno de las bebidas más populares en la coctelería y desde su invención han surgido numerosas versiones que varían del original.</string>
+    <string name="drink_preparation_mojito">"Preparación:\n"En un vaso tumbler agregar la menta, 1 oz de Goma, 1 oz jugo de limón natural, amanerar suavemente para no romper las hojas, llenar el vaso con hielo frappe, 2 oz de ron y revolver tratando de subir la menta y llenar con agua mineral con gas.</string>
+
+    <string name="drink_ingredients_mint_mojito">"Menta"</string>
+    <string name="drink_ingredients_eraser_mojito">"Goma"</string>
+    <string name="drink_ingredients_lemon_juice_mojito">"Jugo de Limón"</string>
+    <string name="drink_ingredients_ice_frappe_mojito">"Hielo Frappe"</string>
+    <string name="drink_ingredients_rum_mojito">"Ron Blanco o Dorado"</string>
+    <string name="drink_ingredients_mineral_mojito">"Agua mineral"</string>
+    <string name="drink_unit_meas_leaves_mojito">"hojas."</string>
+    <string name="drink_unit_meas_oz_mojito">"oz."</string>
+    <string name="drink_unit_meas_frappe_mojito">"Frappe."</string>
+    <string name="drink_unit_meas_to_crown_mojito">"Coronar."</string>
+
+    <!-- Maracuya Mojito Drink-->
+    <string name="drink_name_maracuya_mojito">Mojito de Maracuya</string>
+    <string name="drink_preparation_maracuya_mojito">"Preparación:\n"En un vaso tumbler agregar la menta, 1 oz de Goma, 1 oz jugo de limón natural, amanerar suavemente para no romper las hojas, llenar el vaso con hielo frappe, 2 oz de ron y revolver tratando de subir la menta y llenar con agua mineral con gas.</string>
+    <string name="drink_description_maracuya_mojito">Como riff de mojito cubano, tiene los ingredientes esenciales del mojito como menta, ron y gaseosa, pero agrega un sabor tropical con la pulpa de maracuyá.</string>
+
+    <string name="drink_ingredients_maracuya_mint_mojito">"Menta"</string>
+    <string name="drink_ingredients_maracuya_eraser_mojito">"Goma"</string>
+    <string name="drink_ingredients_maracuya_lemon_juice_mojito">"Jugo de Limón"</string>
+    <string name="drink_ingredients_maracuya_ice_frappe_mojito">"Hielo Frappe"</string>
+    <string name="drink_ingredients_maracuya_rum_mojito">"Ron Blanco o Dorado"</string>
+    <string name="drink_ingredients_maracuya_juice_mojito">"Pulpa de maracuyá"</string>
+    <string name="drink_ingredients_maracuya_mineral_mojito">"Agua mineral"</string>
+
+    <!-- Daiquiri Drink-->
+    <string name="drink_name_daiquiri">Daiquiri</string>
+    <string name="drink_preparation_daiquiri">"Preparación:\n"En una coctelera agregar 1 oz jugo de limón natural, 1 oz de Goma, 2 oz de ron, 1 Dash de Triple Sec. (un toque). Agregar 2 o 3 hielos, luego mesclar (Cuando la coctelera esta empavonada [fría]).</string>
+    <string name="drink_description_daiquiri">Es un cóctel clásico, dulce, simple y refrescante, que combina ron con jugo de limón y azúcar. Este trago es conocido por su equilibrio de sabores agridulces y ron. Es un cóctel versátil que se puede disfrutar en un caluroso día de verano.</string>
+
+    <string name="drink_unit_meas_cube_daiquiri">"Cubo."</string>
+    <string name="drink_unit_meas_oz_daiquiri">"oz."</string>
+    <string name="drink_unit_meas_dash_daiquiri">"Dash."</string>
+
+    <string name="drink_ingredients_eraser_daiquiri">"Goma"</string>
+    <string name="drink_ingredients_lemon_juice_daiquiri">"Jugo de Limón"</string>
+    <string name="drink_ingredients_rum_daiquiri">"Ron Blanco o Dorado"</string>
+    <string name="drink_ingredients_ice_cube_daiquiri">"Cubo de Hielo"</string>
+    <string name="drink_ingredients_triple_sex_daiquiri">"Triple Sex"</string>
+
+    <!-- Strawberry Daiquiri Drink-->
+    <string name="drink_name_strawberry_daiquiri">Daiquiri de Frutilla</string>
+    <string name="drink_preparation_strawberry_daiquiri">"Preparación:\n"En una coctelera agregar 1 oz de Goma, 1 oz jugo de limón natural, 2 oz de ron, 1 Dash de Triple Sec. (un toque). Agregar pulpa de frutilla, agregar albahaca y 3 o 4 hielos, luego mesclar (Cuando la coctelera esta empavonada [fría]).</string>
+    <string name="drink_description_strawberry_daiquiri">El Daiquiri de fresa es una versión más dulce del Daiquiri tradicional, pero igual de fresca y agradable de tomar junto con los amigos en un momento de relax. Con esta bebida recordarás las vacaciones de verano y la sensación de estar junto a la piscina con esta delicia granizada perfecta para combatir el calor.</string>
+
+    <string name="drink_unit_meas_cube_strawberry_daiquiri">"Cubo."</string>
+    <string name="drink_unit_meas_oz_strawberry_daiquiri">"oz."</string>
+    <string name="drink_unit_meas_dash_strawberry_daiquiri">"Dash."</string>
+    <string name="drink_unit_meas_leaves_strawberry_daiquiri">"Hojas."</string>
+
+    <string name="drink_ingredients_eraser_strawberry_daiquiri">"Goma"</string>
+    <string name="drink_ingredients_lemon_strawberry_juice_daiquiri">"Jugo de Limón"</string>
+    <string name="drink_ingredients_rum_strawberry_daiquiri">"Ron Blanco o Dorado"</string>
+    <string name="drink_ingredients_ice_cube_strawberry_daiquiri">"Cubo de Hielo"</string>
+    <string name="drink_ingredients_triple_sex_strawberry_daiquiri">"Triple Sex"</string>
+    <string name="drink_ingredients_basil_leaf_strawberry_daiquiri">"Albahaca"</string>
+
+
+    <!-- Pina Colada Drink-->
+    <string name="drink_name_pina_colada">Piña Colada</string>
+    <string name="drink_preparation_pina_colada">"Preparación:\n"En una coctelera agregar 2 oz de pulpa de piña, 2 oz crema de coco, 2 oz de ron, 1 oz de goma y 2/4 de hielos frape, luego mesclar (Cuando la coctelera esta empavonada [fría]).\nEn una copa agregar ¾ de hielos, agregar la mescla a la copa y decorar con el misamplas</string>
+    <string name="drink_description_pina_colada">La piña colada es un cóctel tropical clásico que combina el sabor dulce y refrescante de la piña con la suavidad del coco.</string>
+
+    <string name="drink_unit_meas_cube_pina_colada">"Frappe."</string>
+    <string name="drink_unit_meas_oz_pina_colada">"oz."</string>
+    <string name="drink_unit_meas_dash_pina_colada">"Dash."</string>
+    <string name="drink_unit_meas_leaves_pina_colada">"Hojas."</string>
+
+    <string name="drink_ingredients_pina_just_pina_colada">"Pulpa de Piña"</string>
+    <string name="drink_ingredients_coconut_cream_pina_colada">"Crema de coco"</string>
+    <string name="drink_ingredients_rum_pina_colada">"Ron Blanco"</string>
+    <string name="drink_ingredients_eraser_pina_colada">"Goma"</string>
+    <string name="drink_ingredients_misamplas_pina_colada">"Misamplas"</string>
+    <string name="drink_ingredients_ice_frappe_pina_colada">"Hielo Frappe"</string>
+
+
+    <!-- Cosmopolitan Drink-->
+    <string name="drink_name_cosmopolitan">Cosmopolitan</string>
+    <string name="drink_preparation_cosmopolitan">"Preparación:\n"Primero ahí que enfriar la copa con hielo, girándolo por unos segundos para tener un mejor enfriamiento de esta. Agregar en la coctelera 40 gramos de arándanos, un dash de limón, 1 dash de triple sec. Luego macerar en la coctelera, agregar 2 oz de vodka, agregar 3 a 4 cubos de hielo y agitar. Retirar el hielo de la copa y agregar el coctel con el doble colado, luego decorar. (Se puede presionar el cítrico para que vote un poco de aceite y prenderle fuego por un segundo)</string>
+    <string name="drink_description_cosmopolitan">El clásico y potente Cosmopolitan incluye vodka, Triple Sec, jugo de arándano y hielo y generalmente se adorna con cáscara de naranja.</string>
+
+    <string name="drink_unit_meas_gr_cosmopolitan">"gr"</string>
+    <string name="drink_unit_meas_dash_cosmopolitan">"Dash."</string>
+    <string name="drink_unit_meas_oz_cosmopolitan">"oz."</string>
+    <string name="drink_unit_meas_cube_cosmopolitan">"Cubo."</string>
+
+    <string name="drink_ingredients_blueberries_cosmopolitan">"Arándanos</string>
+    <string name="drink_ingredients_lemon_juice_cosmopolitan">"Jugo de Limón"</string>
+    <string name="drink_ingredients_triple_sex_cosmopolitan">"Triple Sex"</string>
+    <string name="drink_ingredients_vodka_cosmopolitan">"Vodka"</string>
+    <string name="drink_ingredients_cube_ice_cosmopolitan">"Cubo de Hielo"</string>
+
+
+    <!-- Moscow Mule Rusia Drink-->
+    <string name="drink_name_moscow_mule_rusia">Moscow Mule Rusia</string>
+    <string name="drink_preparation_moscow_mule_rusia">"Preparación:\n"Agregar en el vaso metálico 2 gajos de limón, macerar el limón, agregar hielo frape 3/4, 2 oz de vodka, llenar con ginger beer. Luego agregar la decoración, en este caso con unas rebanadas de jengibre</string>
+    <string name="drink_description_moscow_mule_rusia">Se rumorea que el Moscow Mule fue inventado en 1941 en Nueva York. El único vínculo real con Rusia es que tiene vodka, de ahí el título que suena ruso.</string>
+
+    <string name="drink_unit_meas_wedges_moscow_mule_rusia">"Gajos"</string>
+    <string name="drink_unit_meas_frappe_moscow_mule_rusia">"Frappe."</string>
+    <string name="drink_unit_meas_oz_moscow_mule_rusia">"oz."</string>
+    <string name="drink_unit_meas_to_crown_moscow_mule_rusia">"Coronar."</string>
+
+    <string name="drink_ingredients_lemon_moscow_mule_rusia">"Limón</string>
+    <string name="drink_ingredients_frappe_moscow_mule_rusia">"Hielo Frappe"</string>
+    <string name="drink_ingredients_vodka_moscow_mule_rusia">"Vodka"</string>
+    <string name="drink_ingredients_ginger_beer_moscow_mule_rusia">"Cerveza de Jengibre"</string>
+    <string name="drink_ingredients_ginger_moscow_mule_rusia">"Jengibre"</string>
+
+
+    <!-- Express Martini Drink-->
+    <string name="drink_name_express_martini">Martini Expreso</string>
+    <string name="drink_preparation_express_martini">"Preparación:\n"Primero ahí que enfriar la copa con hielo, girándolo por unos segundos para tener un mejor enfriamiento de esta. Agregar en la coctelera ½ oz de licor de café, ½ oz de goma, 1 oz de café expreso, agregar 1 1/2 oz de vodka, agregar 3 a 4 cubos de hielo y agitar. Retirar el hielo de la copa y agregar el coctel a esta, luego decorar con granos de café.</string>
+    <string name="drink_description_express_martini">Si te gusta el café, un Espresso Martini bien hecho satisfará muchos sentidos sino todos. Sólo el sonido y el ritmo del hielo enfriando tu bebida mientras la agitas vigorosamente, la vista hipnotizante de la bebida recién vertida reposando lentamente, el olor y el sabor del perfecto equilibrio de dulce y seco donde todos los ingredientes son realzados por el vodka y finalmente la sensación en la boca y la espuma sedosa y espesa en la parte superior.</string>
+
+    <string name="drink_unit_meas_grain_express_martini">"Granos."</string>
+    <string name="drink_unit_meas_cube_express_martini">"Cubo."</string>
+    <string name="drink_unit_meas_oz_express_martini">"oz."</string>
+
+    <string name="drink_ingredients_coffee_liquor_express_martini">"Licor de Café"</string>
+    <string name="drink_ingredients_eraser_express_martini">"Goma"</string>
+    <string name="drink_ingredients_coffee_express_martini">"Café Expreso"</string>
+    <string name="drink_ingredients_vodka_express_martini">"Vodka"</string>
+    <string name="drink_ingredients_cube_express_martini">"Cubos de hielo"</string>
+    <string name="drink_ingredients_grain_coffee_express_martini">"Café"</string>
+
+
+    <!-- Classic Tom Collins Drink-->
+    <string name="drink_name_tom_collins">Clásico Tom Collins</string>
+    <string name="drink_preparation_tom_collins">"Preparación:\n"En una coctelera agregar 1 oz de Goma, 1 oz jugo de limón natural, 2 oz de ginebra, agregar 3 cubos de hielo y agitar muy suave. Luego agregar en un vaso 3 cubos de hielo (3/4 del vaso) y trasvasijar el contenido de la coctelera con el colador oruga para una mejor filtración, terminar con agua Gasificada, luego decorar con un marrasquino y una rebanada de limón.</string>
+    <string name="drink_description_tom_collins">Si te encanta la ginebra, el Tom Collins es para ti. Es uno de los cócteles más populares y a su vez facilísimos de elaborar.</string>
+
+    <string name="drink_unit_meas_oz_tom_collins">"oz."</string>
+    <string name="drink_unit_meas_cube_tom_collins">"Cubo."</string>
+    <string name="drink_unit_meas_to_crown_tom_collins">"Coronar."</string>
+
+    <string name="drink_ingredients_eraser_tom_collins">"Goma"</string>
+    <string name="drink_ingredients_lemon_juice_tom_collins">"Jugo de limón"</string>
+    <string name="drink_ingredients_gin_tom_collins">"Ginebra"</string>
+    <string name="drink_ingredients_cube_tom_collins">"Cubos de hielo"</string>
+    <string name="drink_ingredients_water_tom_collins">"Agua Gasificada"</string>
+
+
+    <!-- Gin Tonic Drink-->
+    <string name="drink_name_gin_tonic">Gin Tonic</string>
+    <string name="drink_preparation_gin_tonic">"Preparación:\n"En una copa agregar hielo y revolver para enfriar la copa, agregar en la rodaja de naranja unos clavos de olor a presión y enterrarlo en la naranja, luego agregamos la naranja a la copa, 2 oz de Ginebra (Gin), agregar agua tónica con la cuchara coctelera para no romper las burbujas, luego decorar agregar unas estrellas de Anís.</string>
+    <string name="drink_description_gin_tonic">El Gin Tonic es un cóctel elaborado con ginebra, agua tónica y pieles de cítricos. Se cree que fue creado por primera vez en el siglo XVIII por empresas coloniales holandesas y británicas.</string>
+
+    <string name="drink_unit_meas_oz_gin_tonic">"oz."</string>
+    <string name="drink_unit_meas_cube_gin_tonic">"Cubo."</string>
+    <string name="drink_unit_meas_to_crown_gin_tonic">"Coronar."</string>
+    <string name="drink_unit_meas_slice_gin_tonic">"Rodaja."</string>
+
+    <string name="drink_ingredients_cube_gin_tonic">"Hielo en Cubo"</string>
+    <string name="drink_ingredients_orange_gin_tonic">"Naranja"</string>
+    <string name="drink_ingredients_clove_gin_tonic">"Clavo de olor"</string>
+    <string name="drink_ingredients_gin_gin_tonic">"Ginebra"</string>
+    <string name="drink_ingredients_water_gin_tonic">"Agua Tónica"</string>
+    <string name="drink_ingredients_anise_stars_gin_tonic">"Estrellas de Anís"</string>
+
+    <string name="large_text_ingredientes">Ingrediente:\n- Pisco 2oz\n- Goma 1oz\n -Hielo 3 cubos\n- Menta 6 hojas</string>
+</resources>
