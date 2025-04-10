@@ -77,62 +77,22 @@
         "Preparación:\n"En un vaso tumbler agregar la menta, 1 oz de Goma, 1 oz jugo de limón natural, amanerar suavemente para no romper las hojas, llenar el vaso con hielo frappe, 2 oz de ron y revolver tratando de subir la menta y llenar con agua mineral con gas.
     </string>
 
-    <string name="drink_ingredients_mint_mojito">"Mint"</string>
-    <string name="drink_ingredients_eraser_mojito">"Eraser"</string>
-    <string name="drink_ingredients_lemon_juice_mojito">"Lemon juice"</string>
-    <string name="drink_ingredients_ice_frappe_mojito">"Ice Frappe"</string>
-    <string name="drink_ingredients_rum_mojito">"White or Golden Rum"</string>
-    <string name="drink_ingredients_mineral_mojito">"Mineral water"</string>
-
-    <string name="drink_unit_meas_leaves_mojito">"leaves."</string>
-    <string name="drink_unit_meas_oz_mojito">"oz."</string>
-    <string name="drink_unit_meas_frappe_mojito">"Frappe."</string>
-    <string name="drink_unit_meas_to_crown_mojito">"To crown."</string>
 
     <!-- Maracuya Mojito Drink-->
     <string name="drink_name_maracuya_mojito">Maracuya Mojito</string>
     <string name="drink_preparation_maracuya_mojito">"Preparation:\n"In a tumbler glass add the mint, 1 oz of Goma, 1 oz of natural lemon juice, shake gently so as not to break the leaves, fill the glass with frappe ice, 2 oz of rum and stir trying to raise the mint and fill with water mineral with gas.</string>
     <string name="drink_description_maracuya_mojito">As a Cuban mojito riff, it has the essential mojito ingredients like mint, rum, and soda, but adds a tropical flavor with passion fruit pulp.</string>
 
-    <string name="drink_ingredients_maracuya_mint_mojito">"Mint"</string>
-    <string name="drink_ingredients_maracuya_eraser_mojito">"Eraser"</string>
-    <string name="drink_ingredients_maracuya_lemon_juice_mojito">"Lemon juice"</string>
-    <string name="drink_ingredients_maracuya_ice_frappe_mojito">"Ice Frappe"</string>
-    <string name="drink_ingredients_maracuya_rum_mojito">"White or Golden Rum"</string>
-    <string name="drink_ingredients_maracuya_juice_mojito">"Maracuya pulp"</string>
-    <string name="drink_ingredients_maracuya_mineral_mojito">"Mineral water"</string>
 
     <!-- Daiquiri Drink-->
     <string name="drink_name_daiquiri">Daiquiri</string>
     <string name="drink_preparation_daiquiri">"Preparation:\n"In a shaker add 1 oz of natural lemon juice, 1 oz of Goma, 2 oz of rum, 1 Dash of Triple Sec. (one touch). Add 2 or 3 ice cubes, then mix (When the shaker is packed [cold]).</string>
     <string name="drink_description_daiquiri">It is a classic cocktail, sweet, simple and refreshing, combining rum with lemon juice and sugar. This drink is known for its balance of sweet and sour flavors and rum. It is a versatile cocktail that can be enjoyed on a hot summer day.</string>
 
-    <string name="drink_unit_meas_cube_daiquiri">"Cube."</string>
-    <string name="drink_unit_meas_oz_daiquiri">"oz."</string>
-    <string name="drink_unit_meas_dash_daiquiri">"Dash."</string>
-
-    <string name="drink_ingredients_eraser_daiquiri">"Eraser"</string>
-    <string name="drink_ingredients_lemon_juice_daiquiri">"Lemon juice"</string>
-    <string name="drink_ingredients_rum_daiquiri">"White or Golden Rum"</string>
-    <string name="drink_ingredients_ice_cube_daiquiri">"Ice Cube"</string>
-    <string name="drink_ingredients_triple_sex_daiquiri">"Triple Sex"</string>
-
     <!-- Strawberry Daiquiri Drink-->
     <string name="drink_name_strawberry_daiquiri">Strawberry Daiquiri</string>
     <string name="drink_preparation_strawberry_daiquiri">"Preparation:\n"In a shaker add 1 oz of Goma, 1 oz of natural lemon juice, 2 oz of rum, 1 Dash of Triple Sec. (one touch). Add strawberry pulp, add basil and 3 or 4 ice, then mix (When the shaker is packed [cold]).</string>
     <string name="drink_description_strawberry_daiquiri">The Strawberry Daiquiri is a sweeter version of the traditional Daiquiri, but just as fresh and pleasant to drink with friends in a moment of relaxation. With this drink you will remember summer vacations and the feeling of being by the pool with this slushy delight perfect to beat the heat.</string>
-
-    <string name="drink_unit_meas_cube_strawberry_daiquiri">"Cube."</string>
-    <string name="drink_unit_meas_oz_strawberry_daiquiri">"oz."</string>
-    <string name="drink_unit_meas_dash_strawberry_daiquiri">"Dash."</string>
-    <string name="drink_unit_meas_leaves_strawberry_daiquiri">"Leaves."</string>
-
-    <string name="drink_ingredients_eraser_strawberry_daiquiri">"Eraser"</string>
-    <string name="drink_ingredients_lemon_strawberry_juice_daiquiri">"Lemon juice"</string>
-    <string name="drink_ingredients_rum_strawberry_daiquiri">"White or Golden Rum"</string>
-    <string name="drink_ingredients_ice_cube_strawberry_daiquiri">"Ice Cube"</string>
-    <string name="drink_ingredients_triple_sex_strawberry_daiquiri">"Triple Sex"</string>
-    <string name="drink_ingredients_basil_leaf_strawberry_daiquiri">"Basil Leaf"</string>
 
 
     <!-- Pina Colada Drink-->
@@ -140,125 +100,108 @@
     <string name="drink_preparation_pina_colada">"Preparation:\n"In a shaker add 2 oz of pineapple pulp, 2 oz of coconut cream, 2 oz of rum, 1 oz of gum and 2/4 of ice cubes, then mix (When the shaker is packed [cold]).\nIn a glass add ¾ of ice, add the mixture to the glass and decorate with the misamplas</string>
     <string name="drink_description_pina_colada">The piña colada is a classic tropical cocktail that combines the sweet and refreshing flavor of pineapple with the smoothness of coconut.</string>
 
-    <string name="drink_unit_meas_cube_pina_colada">"Cube."</string>
-    <string name="drink_unit_meas_oz_pina_colada">"oz."</string>
-    <string name="drink_unit_meas_dash_pina_colada">"Dash."</string>
-    <string name="drink_unit_meas_leaves_pina_colada">"Leaves."</string>
-
-    <string name="drink_ingredients_pina_just_pina_colada">"Pineapple Pulp"</string>
-    <string name="drink_ingredients_coconut_cream_pina_colada">"Coconut cream"</string>
-    <string name="drink_ingredients_rum_pina_colada">"White Rum"</string>
-    <string name="drink_ingredients_eraser_pina_colada">"Eraser"</string>
-    <string name="drink_ingredients_misamplas_pina_colada">"Misamplas"</string>
-    <string name="drink_ingredients_ice_frappe_pina_colada">"Frappe Ice"</string>
-
-
     <!-- Cosmopolitan Drink-->
     <string name="drink_name_cosmopolitan">Cosmopolitan</string>
     <string name="drink_preparation_cosmopolitan">"Preparation:\n"First there you have to cool the glass with ice, rotating it for a few seconds to have a better cooling of it. Add 40 grams of blueberries, a dash of lemon, 1 dash of triple sec to the shaker. Then mash in the shaker, add 2 oz of vodka, add 3 to 4 ice cubes and shake. Remove the ice from the glass and add the double-strained cocktail, then decorate. (You can press the citrus to release a little oil and set it on fire for a second)</string>
     <string name="drink_description_cosmopolitan">The classic and potent Cosmopolitan includes vodka, Triple Sec, cranberry juice and ice and is usually garnished with orange peel.</string>
-
-    <string name="drink_unit_meas_gr_cosmopolitan">"gr"</string>
-    <string name="drink_unit_meas_dash_cosmopolitan">"Dash."</string>
-    <string name="drink_unit_meas_oz_cosmopolitan">"oz."</string>
-    <string name="drink_unit_meas_cube_cosmopolitan">"Cube."</string>
-
-    <string name="drink_ingredients_blueberries_cosmopolitan">"Blueberries</string>
-    <string name="drink_ingredients_lemon_juice_cosmopolitan">"Lemon juice"</string>
-    <string name="drink_ingredients_triple_sex_cosmopolitan">"Triple Sex"</string>
-    <string name="drink_ingredients_vodka_cosmopolitan">"Vodka"</string>
-    <string name="drink_ingredients_cube_ice_cosmopolitan">"Ice Cube"</string>
-
 
     <!-- Moscow Mule Rusia Drink-->
     <string name="drink_name_moscow_mule_rusia">Moscow Mule Russia</string>
     <string name="drink_preparation_moscow_mule_rusia">"Preparación:\n"Add 2 lemon wedges to the metal glass, macerate the lemon, add 3/4 frape ice, 2 oz of vodka, fill with ginger beer. Then add the decoration, in this case with some ginger slices</string>
     <string name="drink_description_moscow_mule_rusia">The Moscow Mule is rumored to have been invented in 1941 in New York. The only real link to Russia is that it has vodka, hence the Russian-sounding title.</string>
 
-    <string name="drink_unit_meas_wedges_moscow_mule_rusia">"Wedges"</string>
-    <string name="drink_unit_meas_frappe_moscow_mule_rusia">"Frappe."</string>
-    <string name="drink_unit_meas_oz_moscow_mule_rusia">"oz."</string>
-    <string name="drink_unit_meas_to_crown_moscow_mule_rusia">"To Crown."</string>
-
-    <string name="drink_ingredients_lemon_moscow_mule_rusia">"Lemon</string>
-    <string name="drink_ingredients_frappe_moscow_mule_rusia">"Frappe Ice"</string>
-    <string name="drink_ingredients_vodka_moscow_mule_rusia">"Vodka"</string>
-    <string name="drink_ingredients_ginger_beer_moscow_mule_rusia">"Ginger beer"</string>
-    <string name="drink_ingredients_ginger_moscow_mule_rusia">"Ginger"</string>
-
-
     <!-- Express Martini Drink-->
     <string name="drink_name_express_martini">Express Martini</string>
     <string name="drink_preparation_express_martini">"Preparation:\n"First there you have to cool the glass with ice, rotating it for a few seconds to have a better cooling of it. Add ½ ounce of coffee liqueur, ½ ounce of gum, 1 ounce of espresso to the shaker, add 1 1/2 ounces of vodka, add 3 to 4 ice cubes and shake. Remove the ice from the glass and add the cocktail to it, then decorate with coffee beans.</string>
     <string name="drink_description_express_martini">If you like coffee, a well-made Espresso Martini will satisfy many, if not all, senses. Just the sound and rhythm of ice chilling your drink as you shake it vigorously, the mesmerizing sight of the freshly poured drink slowly resting, the smell and taste of the perfect balance of sweet and dry where all the ingredients are enhanced by the vodka and finally the mouthfeel and the silky, thick foam on top.</string>
-
-    <string name="drink_unit_meas_grain_express_martini">"Grain."</string>
-    <string name="drink_unit_meas_cube_express_martini">"Cube."</string>
-    <string name="drink_unit_meas_oz_express_martini">"oz."</string>
-
-    <string name="drink_ingredients_coffee_liquor_express_martini">"Coffee liquor"</string>
-    <string name="drink_ingredients_eraser_express_martini">"Eraser"</string>
-    <string name="drink_ingredients_coffee_express_martini">"Coffee express"</string>
-    <string name="drink_ingredients_vodka_express_martini">"Vodka"</string>
-    <string name="drink_ingredients_cube_express_martini">"Ice Cubes"</string>
-    <string name="drink_ingredients_grain_coffee_express_martini">"Coffee"</string>
-
 
     <!-- Classic Tom Collins Drink-->
     <string name="drink_name_tom_collins">Classic Tom Collins</string>
     <string name="drink_preparation_tom_collins">"Preparation:\n"In a cocktail shaker add 1 oz of Goma, 1 oz of natural lemon juice, 2 oz of gin, add 3 ice cubes and shake very gently. Then add 3 ice cubes (3/4 of the glass) to a glass and transfer the contents of the shaker with the caterpillar strainer for better filtration, finish with Sparkling water, then decorate with a maraschino and a slice of lemon.</string>
     <string name="drink_description_tom_collins">If you love gin, Tom Collins is for you. It is one of the most popular cocktails and at the same time very easy to make.</string>
 
-    <string name="drink_unit_meas_oz_tom_collins">"oz."</string>
-    <string name="drink_unit_meas_cube_tom_collins">"Cube."</string>
-    <string name="drink_unit_meas_to_crown_tom_collins">"To Crown."</string>
-
-    <string name="drink_ingredients_eraser_tom_collins">"Eraser"</string>
-    <string name="drink_ingredients_lemon_juice_tom_collins">"Lemon Juice"</string>
-    <string name="drink_ingredients_gin_tom_collins">"Geneva"</string>
-    <string name="drink_ingredients_cube_tom_collins">"Ice cubes"</string>
-    <string name="drink_ingredients_water_tom_collins">"Carbonated water"</string>
-
-
     <!-- Gin Tonic Drink-->
     <string name="drink_name_gin_tonic">Gin Tonic</string>
     <string name="drink_preparation_gin_tonic">"Preparation:\n"In a glass add ice and stir to cool the glass, add a few pressed cloves to the orange slice and bury it in the orange, then add the orange to the glass, 2 oz of Geneva (Gin), add tonic water with the cocktail spoon so as not to break the bubbles, then decorate by adding some anise stars.</string>
     <string name="drink_description_gin_tonic">The Gin Tonic is a cocktail made with gin, tonic water and citrus peels. It is believed to have been first created in the 18th century by Dutch and British colonial companies.</string>
 
-    <string name="drink_unit_meas_oz_gin_tonic">"oz."</string>
-    <string name="drink_unit_meas_cube_gin_tonic">"Cube."</string>
-    <string name="drink_unit_meas_to_crown_gin_tonic">"To crown."</string>
-    <string name="drink_unit_meas_slice_gin_tonic">"Slice."</string>
-
-    <string name="drink_ingredients_cube_gin_tonic">"Ice Cube"</string>
-    <string name="drink_ingredients_orange_gin_tonic">"Orange"</string>
-    <string name="drink_ingredients_clove_gin_tonic">"Clove"</string>
-    <string name="drink_ingredients_gin_gin_tonic">"Geneva"</string>
-    <string name="drink_ingredients_water_gin_tonic">"Tonic water"</string>
-    <string name="drink_ingredients_anise_stars_gin_tonic">"Anise Stars"</string>
-
     <!-- Old Fashioned-->
     <string name="drink_name_old_fashioned">Old Fashioned</string>
     <string name="drink_description_old_fashioned">In its own right, the Old Fashioned is considered to be the first cocktail in history. Its origins date back to the late eighteenth or early nineteenth century, it fulfills that definition without fissures, and has endured to date with good standing, despite having more than 200 years behind it. It is an emblem of the cocktail world. It is not for nothing that it is an official cocktail of the IBA (International Bartenders Association).</string>
     <string name="drink_preparation_old_fashioned">
-        "Preparación:\n"In an Old Fashioned glass add a tablespoon of Goma, 3 drops of bitters
+        "Preparation:\n"In an Old Fashioned glass add a tablespoon of Goma, 3 drops of bitters
         Angosturas, 1 dash of mineral water, stir in the glass and set aside for later.
         In the shaker add 4 ice cubes, 2 oz of Blend whiskey. Now we must move on to the pouring stage where we have to take the mixture from one side to the other with the caterpillar strainer (about 3 to 4 times per side), with this we will achieve the oxygenation of the whiskey.
         In the Old Fashioned glass add the crystalline ice and pour the mixture from the shaker into the glass, and then garnish with a maraschino and orange.
     </string>
 
-    <string name="drink_ingredients_eraser_old_fashioned">"Eraser"</string>
-    <string name="drink_ingredients_angosturas_old_fashioned">"Angosturas bitters"</string>
-    <string name="drink_ingredients_mineral_old_fashioned">"Mineral water"</string>
-    <string name="drink_ingredients_ice_cube_old_fashioned">"Ice Cube"</string>
-    <string name="drink_ingredients_whisky_old_fashioned">"Whisky Blend"</string>
-    <string name="drink_ingredients_crystalline_ice_old_fashioned">"Crystalline Ice"</string>
-    <string name="drink_ingredients_maraschino_old_fashioned">"Maraschino and Orange"</string>
+    <!-- Rusty Clove -->
+    <string name="drink_name_rusty_clove">Rusty Clove</string>
+    <string name="drink_description_rusty_clove">Aromatic, powerful, slightly sweet, thanks to the aromas of saffron, nutmeg and honey. The Rusty Clove with Drambuie and whiskey.</string>
+    <string name="drink_preparation_rusty_clove">
+        "Preparation:\n"Preparación: En un vaso whiskero agregar 1 hielo cristalino, 2 oz de whisky, 1 oz de Drambue y decorar con una rodaja de naranja y 2 clavos de olor.
+    </string>
 
-    <string name="drink_unit_meas_leaves_old_fashioned">"leaves."</string>
-    <string name="drink_unit_meas_oz_old_fashioned">"oz."</string>
-    <string name="drink_unit_meas_frappe_old_fashioned">"Frappe."</string>
-    <string name="drink_unit_meas_to_crown_old_fashioned">"To crown."</string>
+    <!-- Irish Coffee -->
+    <string name="drink_name_irish_coffee">Irish Coffee</string>
+    <string name="drink_description_irish_coffee">The Irish Coffee is a warm, rich, and creamy cocktail with a perfect balance of bitter coffee, sweet sugar, and smooth Irish whiskey. The whipped cream adds a luxurious, velvety texture.</string>
+    <string name="drink_preparation_irish_coffee">
+        "Preparation:\n"In the Geiger add the whiskey 60 ml (2 oz), then with a lighter flame the whiskey (blue flame around it), leave in that state until finished the preparation.
+        \n\nIn a glass add 2 oz of espresso, turn off the heat of the whiskey (you have to cover it to remove the oxygen).
+        \n\nAdd the Geiger whiskey to the glass, add milk foam and garnish with 3 coffee beans.
+    </string>
 
     <string name="large_text_ingredientes">Ingrediente:\nPisco\nGoma\nHielo\nMenta</string>
+
+    <!-- Unit Meas of drink-->
+    <string name="drink_unit_meas_oz">"oz."</string>
+    <string name="drink_unit_meas_cube">"Cube."</string>
+    <string name="drink_unit_meas_dash">"Dash."</string>
+    <string name="drink_unit_meas_leaves">"Leaves."</string>
+    <string name="drink_unit_meas_to_crown">"To crown."</string>
+    <string name="drink_unit_meas_frappe">"Frappe."</string>
+    <string name="drink_unit_meas_gr">"gr"</string>
+    <string name="drink_unit_meas_quantity">"cu"</string>
+    <string name="drink_unit_meas_grain">"Grain."</string>
+    <string name="drink_unit_meas_slice">"Slice."</string>
+    <string name="drink_unit_meas_wedges">"Wedges"</string>
+
+    <!-- Ingredient of drink-->
+    <string name="drink_ingredient_ice_frappe">"Frappe Ice"</string>
+    <string name="drink_ingredient_ice_cube">"Ice Cube"</string>
+    <string name="drink_ingredient_crystalline_ice">"Crystalline Ice"</string>
+
+    <string name="drink_ingredient_mint">"Mint"</string>
+    <string name="drink_ingredient_orange">"Orange"</string>
+    <string name="drink_ingredient_lemon">"Lemon</string>
+    <string name="drink_ingredient_lemon_juice">"Lemon juice"</string>
+    <string name="drink_ingredient_pina_just">"Pineapple Pulp"</string>
+    <string name="drink_ingredient_maracuya_juice">"Maracuya pulp"</string>
+    <string name="drink_ingredient_blueberries">"Blueberries</string>
+    <string name="drink_ingredient_maraschino">"Maraschino and Orange"</string>
+
+    <string name="drink_ingredient_ginger_beer">"Ginger beer"</string>
+    <string name="drink_ingredient_coffee_liquor">"Coffee liquor"</string>
+    <string name="drink_ingredient_coffee_express">"Coffee express"</string>
+    <string name="drink_ingredient_coffee_grain">"Coffee Grain"</string>
+    <string name="drink_ingredient_milk_foam">"Milk Foam"</string>
+    <string name="drink_ingredient_coconut_cream">"Coconut cream"</string>
+
+    <string name="drink_ingredient_eraser">"Eraser"</string>
+    <string name="drink_ingredient_clove">"Clove"</string>
+    <string name="drink_ingredient_mineral_water">"Mineral water"</string>
+    <string name="drink_ingredient_tonic_water">"Tonic water"</string>
+    <string name="drink_ingredient_basil_leaf_strawberry">"Basil Leaf"</string>
+    <string name="drink_ingredient_anise_stars">"Anise Stars"</string>
+    <string name="drink_ingredient_misamplas">"Misamplas"</string>
+
+    <string name="drink_ingredient_wg_rum">"White or Golden Rum"</string>
+    <string name="drink_ingredient_triple_sex">"Triple Sex"</string>
+    <string name="drink_ingredient_w_rum">"White Rum"</string>
+    <string name="drink_ingredient_vodka">"Vodka"</string>
+    <string name="drink_ingredient_gin">"Geneva"</string>
+    <string name="drink_ingredient_angosturas">"Angosturas bitters"</string>
+    <string name="drink_ingredient_whisky">"Whisky Blend"</string>
+    <string name="drink_ingredient_drambuie">"Drambuie"</string>
+
 </resources>

@@ -63,7 +63,7 @@ class DrinkFragment : Fragment() {
         //val cocktailsList: List<DrinkModel> = cocktailService.getAllDrinks()
         //val adapterCocktailDetail: CocktailDetailsRecyclerAdapter = CocktailDetailsRecyclerAdapter(cocktailsList, requireContext())
 
-        setDrinkList(root.context, cocktailService, categoryodel.getId())
+        setDrinkByIdCategoria(root.context, cocktailService, categoryodel.getId())
 
 /*
         val cocktailService : CocktailService = CocktailService(requireContext())
@@ -80,7 +80,7 @@ class DrinkFragment : Fragment() {
         return root
     }
 
-    private fun setDrinkList(context:Context, cocktailService:CocktailService, id:Long){
+    private fun setDrinkByIdCategoria(context:Context, cocktailService:CocktailService, id:Long){
 
             val cocktailsList: List<DrinkModel> = cocktailService.findDrinkByIdCategoria(id)
             if(cocktailsList.isNotEmpty()){
@@ -88,22 +88,6 @@ class DrinkFragment : Fragment() {
                 val linearLayoutManager = LinearLayoutManager(_binding?.root!!.context, LinearLayoutManager.VERTICAL, false)
                 _binding!!.recicleViewCocktailDetail.layoutManager = linearLayoutManager
                 _binding!!.recicleViewCocktailDetail.adapter = adapterCocktailDetail
-
-
-                /*
-                val categories: MutableList<CategoryModel> = cocktailService.getAllCategories()
-
-                var drinkImg:DrinkPhotoPreparationModel = DrinkPhotoPreparationModel(1,"img1","ic_mojito_drink",cocktailsList[0])
-                var ingredients = listOf(drinkImg)
-
-                val adapterCocktail = DrinkPreparationImgRecyclerAdapter(ingredients, requireContext())
-                val linearLayoutManager2 = LinearLayoutManager(_binding?.root!!.context, LinearLayoutManager.VERTICAL, false)
-
-                _binding!!.recicleViewCocktail.linearLayoutManager2 = linearLayoutManager
-                _binding!!.recicleViewCocktail.adapter = adapterCocktail
-
-                 */
-
             }else{
                 Toast.makeText(context, "Sin Tragos para esta categoria", Toast.LENGTH_LONG).show()
             }
