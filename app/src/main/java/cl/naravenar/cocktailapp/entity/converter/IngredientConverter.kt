@@ -1,6 +1,5 @@
 package cl.naravenar.cocktailapp.entity.converter
 
-import androidx.room.TypeConverter
 import cl.naravenar.cocktailapp.model.IngredientModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -9,7 +8,7 @@ import java.util.Collections
 class IngredientConverter {
     private val gson = Gson()
 
-    @TypeConverter
+    //@TypeConverter
     fun stringToListIngredient(data: String?): List<IngredientModel> {
         if (data == null) {
             return Collections.emptyList()
@@ -22,7 +21,7 @@ class IngredientConverter {
         return gson.fromJson<List<IngredientModel>>(data, listType)
     }
 
-    @TypeConverter
+    //@TypeConverter
     fun listIngredientToString(someObjects: List<IngredientModel>): String {
         return gson.toJson(someObjects)
     }

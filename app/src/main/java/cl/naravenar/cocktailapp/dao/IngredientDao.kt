@@ -1,26 +1,21 @@
 package cl.naravenar.cocktailapp.dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
 import cl.naravenar.cocktailapp.model.IngredientModel
 
-@Dao
+//@Dao
 interface IngredientDao {
-    @Insert
+    //@Insert
     fun createIngredient(ingredient: IngredientModel): Long
 
-    @Query("SELECT * FROM ingredient where id = :id")
+    //@Query("SELECT * FROM ingredient where id = :id")
     fun getIngredientById(id: Long): IngredientModel
 
-    @Update
+    //@Update
     fun updateIngredient(ingredient: IngredientModel)
 
-    @Delete
+    //@Delete
     fun deleteIngredient(ingredient: IngredientModel)
 
-    @Query("SELECT * FROM ingredient")
+    //@Query("SELECT * FROM ingredient")
     fun getAll() : MutableList<IngredientModel>
 }

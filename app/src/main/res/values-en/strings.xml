@@ -65,6 +65,11 @@
         "Classic Brazilian Caipirinha.\n""Caipirinha with vodka.\n""Strawberry caipirinha.\n"
     </string>
 
+    <string name="title_category_Other">Drinks with Cachaça</string>
+    <string name="coctail_description_other">
+        "Classic Brazilian Caipirinha.\n""Caipirinha with vodka.\n""Strawberry caipirinha.\n"
+    </string>
+
     <!-- Classic Mojito Drink-->
     <string name="drink_name_mojito">Classic Mojito</string>
     <string name="drink_description_mojito">This cocktail, so famous worldwide, is the homeland of Cuba, the country where it was born. The mojito is one of the most popular drinks in cocktails and since its invention, numerous versions have emerged that vary from the original.</string>
@@ -231,6 +236,29 @@
     <string name="drink_ingredients_gin_gin_tonic">"Geneva"</string>
     <string name="drink_ingredients_water_gin_tonic">"Tonic water"</string>
     <string name="drink_ingredients_anise_stars_gin_tonic">"Anise Stars"</string>
+
+    <!-- Old Fashioned-->
+    <string name="drink_name_old_fashioned">Old Fashioned</string>
+    <string name="drink_description_old_fashioned">In its own right, the Old Fashioned is considered to be the first cocktail in history. Its origins date back to the late eighteenth or early nineteenth century, it fulfills that definition without fissures, and has endured to date with good standing, despite having more than 200 years behind it. It is an emblem of the cocktail world. It is not for nothing that it is an official cocktail of the IBA (International Bartenders Association).</string>
+    <string name="drink_preparation_old_fashioned">
+        "Preparación:\n"In an Old Fashioned glass add a tablespoon of Goma, 3 drops of bitters
+        Angosturas, 1 dash of mineral water, stir in the glass and set aside for later.
+        In the shaker add 4 ice cubes, 2 oz of Blend whiskey. Now we must move on to the pouring stage where we have to take the mixture from one side to the other with the caterpillar strainer (about 3 to 4 times per side), with this we will achieve the oxygenation of the whiskey.
+        In the Old Fashioned glass add the crystalline ice and pour the mixture from the shaker into the glass, and then garnish with a maraschino and orange.
+    </string>
+
+    <string name="drink_ingredients_eraser_old_fashioned">"Eraser"</string>
+    <string name="drink_ingredients_angosturas_old_fashioned">"Angosturas bitters"</string>
+    <string name="drink_ingredients_mineral_old_fashioned">"Mineral water"</string>
+    <string name="drink_ingredients_ice_cube_old_fashioned">"Ice Cube"</string>
+    <string name="drink_ingredients_whisky_old_fashioned">"Whisky Blend"</string>
+    <string name="drink_ingredients_crystalline_ice_old_fashioned">"Crystalline Ice"</string>
+    <string name="drink_ingredients_maraschino_old_fashioned">"Maraschino and Orange"</string>
+
+    <string name="drink_unit_meas_leaves_old_fashioned">"leaves."</string>
+    <string name="drink_unit_meas_oz_old_fashioned">"oz."</string>
+    <string name="drink_unit_meas_frappe_old_fashioned">"Frappe."</string>
+    <string name="drink_unit_meas_to_crown_old_fashioned">"To crown."</string>
 
     <string name="large_text_ingredientes">Ingrediente:\nPisco\nGoma\nHielo\nMenta</string>
 </resources>

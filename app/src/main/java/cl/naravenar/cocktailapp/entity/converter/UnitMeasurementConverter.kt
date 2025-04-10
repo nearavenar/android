@@ -1,16 +1,14 @@
 package cl.naravenar.cocktailapp.entity.converter
 
-import androidx.room.TypeConverter
-import cl.naravenar.cocktailapp.model.CategoryModel
 import cl.naravenar.cocktailapp.model.UnitMeasurementModel
 import com.google.gson.Gson
 
 class UnitMeasurementConverter {
 
-    @TypeConverter
+    //@TypeConverter
     fun unitMeasurementoString(unitMeasurement: UnitMeasurementModel) = "$unitMeasurement"
 
-    @TypeConverter
+    //@TypeConverter
     fun stringToUnitMeasurement(value: String): UnitMeasurementModel {
 
         if (value == null) {

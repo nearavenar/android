@@ -2,12 +2,15 @@ package cl.naravenar.cocktailapp.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import cl.naravenar.cocktailapp.MainActivity
@@ -53,6 +56,11 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
             context.startActivity(Intent.createChooser(sharingIntent,context.getString(R.string.app_name)))
         }
 
+        holder.btnFavorite.setOnClickListener{
+            drinkModel.setFavorite(holder.btnFavorite.isChecked)
+            Toast.makeText(context, "Favorite: "+ holder.btnFavorite.isChecked, Toast.LENGTH_LONG).show()
+        }
+
         val resourceId = context.resources.getIdentifier(drinkModel.getImage(), "mipmap", context.packageName)
         if (resourceId != 0) {
             holder.imgDrink.setImageResource(resourceId)
@@ -67,6 +75,18 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
         holder.ratingBarDrink.visibility = View.GONE
     }
 
+    fun guardarDatos(context: Context, clave: String, valor: String) {
+        // Obtén la instancia de SharedPreferences
+        val sharedPreferences: SharedPreferences = context.getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE)
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+
+        // Guardar el dato
+        editor.putString(clave, valor)
+
+        // Aplicar los cambios
+        editor.apply()  // Usar apply() para guardar de forma asíncrona, o commit() para síncrono
+    }
+
     class CocktailDetailViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title: TextView = itemView.findViewById(R.id.tv_cocktail_detail_title)
         var ingredients: TextView = itemView.findViewById(R.id.tv_cocktail_detail_ingredients)
@@ -77,7 +97,7 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
         var drinkDescription: TextView = itemView.findViewById(R.id.tv_drink_description)
         var ratingBarDrink: RatingBar = itemView.findViewById(R.id.rating_bar_rink)
         var tvRatingBarDrink: TextView = itemView.findViewById(R.id.tv_rating_bar_rink)
-        //var description: TextView = itemView.findViewById(R.id.tv_cocktail_detail_description)
+        var btnFavorite: CheckBox = itemView.findViewById(R.id.chb_favorite_item_card)
         //var layout: LinearLayout = itemView.findViewById(R.id.cv_adapter_cocktail_detail)
     }
 }

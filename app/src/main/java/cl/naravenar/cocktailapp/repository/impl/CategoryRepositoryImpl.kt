@@ -1,47 +1,40 @@
 package cl.naravenar.cocktailapp.repository.impl
 
 import android.content.Context
-import androidx.room.Room
 import cl.naravenar.cocktailapp.R
-import cl.naravenar.cocktailapp.config.StoreDatabase
 import cl.naravenar.cocktailapp.model.CategoryModel
 import cl.naravenar.cocktailapp.repository.CategoryRepository
 
 class CategoryRepositoryImpl(context: Context) : CategoryRepository {
 
-    private var context:Context = context
-    private var database = Room.databaseBuilder(context, StoreDatabase::class.java, "StoreDatabase")
+    private var context :Context = context
+    private var category :MutableList<CategoryModel> = mutableListOf()
+
+    override fun createCategory(drink: CategoryModel) {
+        category.add(drink)
+    }
 
     override fun getAllCategories(): MutableList<CategoryModel> {
-        //return this.database.build().categoryDao().getAllCategories()
-        return getAllCategoriesXML()
+        return getAllCategoriesDam()
     }
 
-    fun getAllCategoriesXML(): MutableList<CategoryModel> {
-        var categoriesList:MutableList<CategoryModel> = mutableListOf()
-        categoriesList.add(CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category"))
-        categoriesList.add(CategoryModel(2, context.resources.getString(R.string.title_category_vodka),true,"ic_vodka_category"))
-        categoriesList.add(CategoryModel(3,context.resources.getString(R.string.title_category_ginebra),true,"ic_gin_category"))
-        categoriesList.add(CategoryModel(4,context.resources.getString(R.string.title_category_pisco),true,"ic_pisco_category"))
-        categoriesList.add(CategoryModel(5,context.resources.getString(R.string.title_category_whisky),true,"ic_wisky_category"))
-        categoriesList.add(CategoryModel(6,context.resources.getString(R.string.title_category_tequila),true,"ic_tequila_category"))
-        categoriesList.add(CategoryModel(7,context.resources.getString(R.string.title_category_aperol),true,"ic_aperol_category"))
-        categoriesList.add(CategoryModel(8,context.resources.getString(R.string.title_category_ramazzotti),true,"ic_ramazzotti_category"))
-        categoriesList.add(CategoryModel(9,context.resources.getString(R.string.title_category_cachaza),true,"ic_cachaza_category"))
-        return categoriesList
-    }
-
-    override fun findCategoriaByNameXml(name:String): List<CategoryModel> {
-        return getAllCategoriesXML().filter {
+    override fun findCategoriaByName(name:String): MutableList<CategoryModel> {
+        return category.filter {
             it.getName().uppercase().contains(name.uppercase())
-        }
+        }.toMutableList()
     }
 
-    override fun createCategory(category: CategoryModel): Long {
-        return this.database.build().categoryDao().createCategory(category)
-    }
-
-    override fun getCategoryByID(id: Long): CategoryModel {
-        return this.database.build().categoryDao().getCategoryById(id)
+    fun getAllCategoriesDam(): MutableList<CategoryModel> {
+        createCategory(CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category"))
+        createCategory(CategoryModel(2, context.resources.getString(R.string.title_category_vodka),true,"ic_vodka_category"))
+        createCategory(CategoryModel(3,context.resources.getString(R.string.title_category_ginebra),true,"ic_gin_category"))
+        createCategory(CategoryModel(4,context.resources.getString(R.string.title_category_pisco),true,"ic_pisco_category"))
+        createCategory(CategoryModel(5,context.resources.getString(R.string.title_category_whisky),true,"ic_wisky_category"))
+        createCategory(CategoryModel(6,context.resources.getString(R.string.title_category_tequila),true,"ic_tequila_category"))
+        createCategory(CategoryModel(7,context.resources.getString(R.string.title_category_aperol),true,"ic_aperol_category"))
+        createCategory(CategoryModel(8,context.resources.getString(R.string.title_category_ramazzotti),true,"ic_ramazzotti_category"))
+        createCategory(CategoryModel(9,context.resources.getString(R.string.title_category_cachaza),true,"ic_cachaza_category"))
+        createCategory(CategoryModel(10,context.resources.getString(R.string.title_category_Other),true,"ic_other_category"))
+        return category
     }
 }

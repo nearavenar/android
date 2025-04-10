@@ -1,26 +1,21 @@
 package cl.naravenar.cocktailapp.dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
 import cl.naravenar.cocktailapp.model.UnitMeasurementModel
 
-@Dao
+//@Dao
 interface UnitMeasurementDao {
-    @Insert
+    //@Insert
     fun createUnitMeasurement(unitMeasurement: UnitMeasurementModel): Long
 
-    @Query("SELECT * FROM unit_measurement where id = :id")
+    //@Query("SELECT * FROM unit_measurement where id = :id")
     fun getUnitMeasurementById(id: Long): UnitMeasurementModel
 
-    @Update
+    //@Update
     fun updateUnitMeasurement(unitMeasurement: UnitMeasurementModel)
 
-    @Delete
+    //@Delete
     fun deleteUnitMeasurement(unitMeasurement: UnitMeasurementModel)
 
-    @Query("SELECT * FROM unit_measurement")
+    //@Query("SELECT * FROM unit_measurement")
     fun getAll() : MutableList<UnitMeasurementModel>
 }

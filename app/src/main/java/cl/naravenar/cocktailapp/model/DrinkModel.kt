@@ -1,26 +1,24 @@
 package cl.naravenar.cocktailapp.model
 
 import android.os.Parcelable
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-import androidx.room.TypeConverters
 import cl.naravenar.cocktailapp.entity.converter.CategoryConverter
 import cl.naravenar.cocktailapp.entity.converter.IngredientConverter
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName = "drink")
-data class DrinkModel constructor(@PrimaryKey private var id: Long = 0,
+//@Entity(tableName = "drink")
+data class DrinkModel constructor(/*@PrimaryKey*/ private var id: Long = 0,
                                   private var name: String,
                                   private var image: String,
                                   private var preparation: String,
                                   private var description: String,
+                                  private var favorite: Boolean,
                                   //@TypeConverters(IngredientConverter::class)
                                   private var ingredients: List<IngredientModel>,
-                                  @TypeConverters(CategoryConverter::class)
+                                  /*@TypeConverters(CategoryConverter::class)*/
                                   private var category: CategoryModel) : Parcelable {
 
-    constructor() : this(0, "","", "","", emptyList(), CategoryModel()) {
+    constructor() : this(0, "","", "","", false, emptyList(), CategoryModel()) {
     }
 
     fun getId(): Long {
@@ -61,6 +59,14 @@ data class DrinkModel constructor(@PrimaryKey private var id: Long = 0,
 
     fun setDescription(description: String) {
         this.description = description
+    }
+
+    fun getFavorite(): Boolean {
+        return favorite
+    }
+
+    fun setFavorite(favorite: Boolean) {
+        this.favorite = favorite
     }
 
     fun getIngredients(): List<IngredientModel> {

@@ -8,14 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import cl.naravenar.cocktailapp.adapter.CategoryRecyclerAdapter
-import cl.naravenar.cocktailapp.adapter.DrinkPreparationImgRecyclerAdapter
 import cl.naravenar.cocktailapp.adapter.DrinksRecyclerAdapter
 import cl.naravenar.cocktailapp.databinding.FragmentCocktailDetailBinding
 import cl.naravenar.cocktailapp.model.CategoryModel
 import cl.naravenar.cocktailapp.model.DrinkModel
-import cl.naravenar.cocktailapp.model.DrinkPhotoPreparationModel
-import cl.naravenar.cocktailapp.model.IngredientModel
 import cl.naravenar.cocktailapp.service.CocktailService
 
 class DrinkFragment : Fragment() {
@@ -86,7 +82,7 @@ class DrinkFragment : Fragment() {
 
     private fun setDrinkList(context:Context, cocktailService:CocktailService, id:Long){
 
-            val cocktailsList: List<DrinkModel> = cocktailService.findDrinkByIdCategoriaXml(id)
+            val cocktailsList: List<DrinkModel> = cocktailService.findDrinkByIdCategoria(id)
             if(cocktailsList.isNotEmpty()){
                 val adapterCocktailDetail: DrinksRecyclerAdapter = DrinksRecyclerAdapter(cocktailsList, requireContext())
                 val linearLayoutManager = LinearLayoutManager(_binding?.root!!.context, LinearLayoutManager.VERTICAL, false)

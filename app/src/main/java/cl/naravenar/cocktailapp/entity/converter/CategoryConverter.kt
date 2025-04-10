@@ -1,14 +1,13 @@
 package cl.naravenar.cocktailapp.entity.converter
 
-import androidx.room.TypeConverter
 import cl.naravenar.cocktailapp.model.CategoryModel
 
 class CategoryConverter {
 
-    @TypeConverter
+    //@TypeConverter
     fun categoryToString(category: CategoryModel) = "$category"
 
-    @TypeConverter
+    //@TypeConverter
     fun stringToTeacher(value: String): CategoryModel {
 
         if (value == null) {

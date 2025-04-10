@@ -54,6 +54,11 @@
         "Caipirinha brasileña clásica.\n""Caipirinha con vodka.\n""Caipirinha de frutilla.\n"
     </string>
 
+    <string name="title_category_Other">Otros</string>
+    <string name="coctail_description_other">
+        "Trago Uno.\n""Trago Dos.\n""Trago Tres.\n"
+    </string>
+
     <!-- Classic Mojito Drink-->
     <string name="drink_name_mojito">Mojito Clásico</string>
     <string name="drink_description_mojito">Este cóctel tan famoso a nivel mundial hace patria de Cuba, el país que lo vio nacer. El mojito es uno de las bebidas más populares en la coctelería y desde su invención han surgido numerosas versiones que varían del original.</string>
@@ -217,6 +222,28 @@
     <string name="drink_ingredients_gin_gin_tonic">"Ginebra"</string>
     <string name="drink_ingredients_water_gin_tonic">"Agua Tónica"</string>
     <string name="drink_ingredients_anise_stars_gin_tonic">"Estrellas de Anís"</string>
+
+    <!-- Old Fashioned-->
+    <string name="drink_name_old_fashioned">Old Fashioned</string>
+    <string name="drink_description_old_fashioned">Por derecho propio, se considera que el Old Fashioned es el primer cóctel de la historia. Sus orígenes se remontan a finales del siglo XVIII o primeros del siglo XIX, cumple sin fisuras aquella definición, y ha perdurado hasta la fecha con buen predicamento, a pesar de contar con más de 200 años a sus espaldas.  Es todo un emblema del mundo del cóctel. No en vano es un cóctel oficial de la IBA (International Bartenders Association).</string>
+    <string name="drink_preparation_old_fashioned">
+        "Preparación:\n"En un vaso Old Fashioned agregar una cucharada de Goma, 3 gotas de amargo de angosturas, 1 dash de agua mineral, revolver en el vaso y reservar para más adelante.
+        \n\nEn la coctelera agregar 4 cubos de hielo, 2 oz de whisky Blend. Ahora debemos pasar a la etapa de escanciado en donde hay que llevar la mescla de un lado para el otro con el colador oruga (unas 3 a 4 veces por lado), con esto lograremos la oxigenación del whisky.
+        \n\nEn el vaso Old Fashioned agregar el hielo cristalino y verter la mescla de la coctelera en el vaso, para luego adornar con un marrasquino y naranja.
+    </string>
+
+    <string name="drink_ingredients_eraser_old_fashioned">"Goma"</string>
+    <string name="drink_ingredients_angosturas_old_fashioned">"Amargo de Angosturas"</string>
+    <string name="drink_ingredients_mineral_old_fashioned">"Agua Mineral"</string>
+    <string name="drink_ingredients_ice_cube_old_fashioned">"Hielo en Cubo"</string>
+    <string name="drink_ingredients_whisky_old_fashioned">"Whisky Blend"</string>
+    <string name="drink_ingredients_crystalline_ice_old_fashioned">"Hielo Cristalino"</string>
+    <string name="drink_ingredients_maraschino_old_fashioned">"Marrasquino y naranja"</string>
+
+    <string name="drink_unit_meas_leaves_old_fashioned">"leaves."</string>
+    <string name="drink_unit_meas_oz_old_fashioned">"oz."</string>
+    <string name="drink_unit_meas_frappe_old_fashioned">"Frappe."</string>
+    <string name="drink_unit_meas_to_crown_old_fashioned">"To crown."</string>
 
     <string name="large_text_ingredientes">Ingrediente:\n- Pisco 2oz\n- Goma 1oz\n -Hielo 3 cubos\n- Menta 6 hojas</string>
 </resources>

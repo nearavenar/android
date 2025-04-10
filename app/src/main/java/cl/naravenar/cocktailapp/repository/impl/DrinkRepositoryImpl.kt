@@ -1,9 +1,7 @@
 package cl.naravenar.cocktailapp.repository.impl
 
 import android.content.Context
-import androidx.room.Room
 import cl.naravenar.cocktailapp.R
-import cl.naravenar.cocktailapp.config.StoreDatabase
 import cl.naravenar.cocktailapp.model.CategoryModel
 import cl.naravenar.cocktailapp.model.DrinkModel
 import cl.naravenar.cocktailapp.model.IngredientModel
@@ -12,12 +10,37 @@ import cl.naravenar.cocktailapp.repository.DrinkRepository
 
 class DrinkRepositoryImpl(context: Context) : DrinkRepository {
 
-    private val cocktailsList: ArrayList<DrinkModel> = ArrayList()
+    private val drinks: MutableList<DrinkModel> = ArrayList()
     private var context:Context = context
 
-    private var database = Room.databaseBuilder(context, StoreDatabase::class.java, "StoreDatabase")
+    override fun createDrink(drink: DrinkModel) {
+        drinks.add(drink)
+    }
+    override fun findDrinkByIdCategoria(idCategoria:Long): List<DrinkModel> {
+        listCocktails()
+        return drinks.filter {
+            it.getCategory().getId() == idCategoria
+        }
+    }
+    override fun listCocktails(): MutableList<DrinkModel> {
+        drinks.clear()
+        createDrink(createClassicMojito())
+        createDrink(createMaracuyaMojito())
+        createDrink(createDaiquiri())
+        createDrink(createStrawberryDaiquiri())
+        createDrink(createPinaColada())
+        createDrink(createCosmopolitan())
+        createDrink(createMoscowMuleRussia())
+        createDrink(createMartiniExpreso())
+        createDrink(createClassicTomCollins())
+        createDrink(createGinTonic())
+        createDrink(createSunriseTequila())
+        createDrink(createMargaritaTequila())
+        createDrink(createOldFashioned())
+        return drinks
+    }
 
-    fun createClassicMojito():DrinkModel{
+    private fun createClassicMojito():DrinkModel{
 
         var categoryRum = CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category")
 
@@ -44,7 +67,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createMaracuyaMojito():DrinkModel{
+    private fun createMaracuyaMojito():DrinkModel{
 
         var categoryRum = CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category")
 
@@ -72,7 +95,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createDaiquiri():DrinkModel{
+    private fun createDaiquiri():DrinkModel{
 
         var categoryRum = CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category")
 
@@ -97,7 +120,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createStrawberryDaiquiri ():DrinkModel{
+    private fun createStrawberryDaiquiri ():DrinkModel{
 
         var categoryRum = CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category")
 
@@ -126,7 +149,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createPinaColada():DrinkModel{
+    private fun createPinaColada():DrinkModel{
         var categoryRum = CategoryModel(1, context.resources.getString(R.string.title_category_rum),true,"ic_while_run_category")
 
         var unitMeasOz = UnitMeasurementModel(1,context.resources.getString(R.string.drink_unit_meas_oz_pina_colada))
@@ -151,8 +174,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-
-    fun createCosmopolitan():DrinkModel{
+    private fun createCosmopolitan():DrinkModel{
 
         var categoryRum = CategoryModel(2, context.resources.getString(R.string.title_category_vodka),true,"ic_vodka_category")
 
@@ -205,7 +227,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createMartiniExpreso():DrinkModel{
+    private fun createMartiniExpreso():DrinkModel{
 
         var categoryRum = CategoryModel(2, context.resources.getString(R.string.title_category_vodka),true,"ic_vodka_category")
 
@@ -231,7 +253,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createClassicTomCollins():DrinkModel{
+    private fun createClassicTomCollins():DrinkModel{
 
         var categoryRum = CategoryModel(3, context.resources.getString(R.string.title_category_vodka),true,"ic_gin_category")
 
@@ -256,7 +278,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createGinTonic():DrinkModel{
+    private fun createGinTonic():DrinkModel{
 
         var categoryRum = CategoryModel(3, context.resources.getString(R.string.title_category_vodka),true,"ic_cachaza_category")
 
@@ -283,7 +305,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createSunriseTequila():DrinkModel{
+    private fun createSunriseTequila():DrinkModel{
 
         var categoryRum = CategoryModel(6, context.resources.getString(R.string.title_category_vodka),true,"ic_vodka_category")
 
@@ -311,7 +333,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun createMargaritaTequila():DrinkModel{
+    private fun createMargaritaTequila():DrinkModel{
 
         var categoryRum = CategoryModel(6, context.resources.getString(R.string.title_category_vodka),true,"ic_vodka_category")
 
@@ -341,42 +363,31 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         return drinkModelMojito
     }
 
-    fun findDrinksByIdCategoria(idCategoria:Long): List<DrinkModel> {
-        return database.build().drinkDao().getDrinkByIdCategory(idCategoria)
-    }
+    private fun createOldFashioned():DrinkModel{
+        var categoryRum = CategoryModel(5, context.resources.getString(R.string.title_category_whisky),true,"ic_while_run_category")
 
-    fun findDrinkByIdCategoriaXml(idCategoria:Long): List<DrinkModel> {
-        return listCocktails().filter {
-            it.getCategory().getId() == idCategoria
-        }
-    }
+        var unitMeasSheet = UnitMeasurementModel(1,context.resources.getString(R.string.drink_unit_meas_leaves_old_fashioned))
+        var unitMeasOz = UnitMeasurementModel(2,context.resources.getString(R.string.drink_unit_meas_oz_old_fashioned))
+        var unitMeasFrappe = UnitMeasurementModel(3,context.resources.getString(R.string.drink_unit_meas_frappe_old_fashioned))
+        var unitMeasToCrown = UnitMeasurementModel(4,context.resources.getString(R.string.drink_unit_meas_to_crown_old_fashioned))
 
-    override fun listCocktails(): ArrayList<DrinkModel> {
-        cocktailsList.add(createClassicMojito())
-        cocktailsList.add(createMaracuyaMojito())
-        cocktailsList.add(createDaiquiri())
-        cocktailsList.add(createStrawberryDaiquiri())
-        cocktailsList.add(createPinaColada())
-        cocktailsList.add(createCosmopolitan())
-        cocktailsList.add(createMoscowMuleRussia())
-        cocktailsList.add(createMartiniExpreso())
-        cocktailsList.add(createClassicTomCollins())
-        cocktailsList.add(createGinTonic())
-        cocktailsList.add(createSunriseTequila())
-        cocktailsList.add(createMargaritaTequila())
+        var ingredients = listOf(
+            IngredientModel(1,context.resources.getString(R.string.drink_ingredients_eraser_old_fashioned), "5",unitMeasSheet),
+            IngredientModel(2,context.resources.getString(R.string.drink_ingredients_angosturas_old_fashioned),"1",unitMeasOz),
+            IngredientModel(3,context.resources.getString(R.string.drink_ingredients_mineral_old_fashioned),"1",unitMeasOz),
+            IngredientModel(4,context.resources.getString(R.string.drink_ingredients_ice_cube_old_fashioned),"3/4",unitMeasFrappe),
+            IngredientModel(5,context.resources.getString(R.string.drink_ingredients_whisky_old_fashioned),"2",unitMeasOz),
+            IngredientModel(6,context.resources.getString(R.string.drink_ingredients_crystalline_ice_old_fashioned),"0",unitMeasToCrown),
+            IngredientModel(7,context.resources.getString(R.string.drink_ingredients_maraschino_old_fashioned),"0",unitMeasToCrown))
 
-        return cocktailsList
-    }
-
-    override fun getDrinkByID(id: Long): DrinkModel {
-        return this.database.build().drinkDao().getDrinkById(id)
-    }
-
-    override fun createDrink(drink: DrinkModel): Long {
-        return this.database.build().drinkDao().createDrink(drink)
-    }
-
-    override fun listDrinks(): MutableList<DrinkModel> {
-        return this.database.build().drinkDao().getAll()
+        var drinkModelMojito = DrinkModel()
+        drinkModelMojito.setId(1)
+        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_old_fashioned))
+        drinkModelMojito.setImage("ic_mojito_drink")
+        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_old_fashioned))
+        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_old_fashioned))
+        drinkModelMojito.setIngredients(ingredients)
+        drinkModelMojito.setCategory(categoryRum)
+        return drinkModelMojito
     }
 }

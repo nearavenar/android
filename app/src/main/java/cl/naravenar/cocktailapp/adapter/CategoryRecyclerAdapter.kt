@@ -65,7 +65,7 @@ class CategoryRecyclerAdapter(cocktailsList: List<CategoryModel>, context: Conte
         }
 
 
-        var descripction= cocktailService.findDrinkByIdCategoriaXml(category.getId())
+        var descripction= cocktailService.findDrinkByIdCategoria(category.getId())
 
         holder.cocktailTitle.text = category.getName()
         if (drink != null) {
