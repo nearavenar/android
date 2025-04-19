@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import cl.naravenar.cocktailapp.databinding.FragmentCoffeeBinding
+import cl.naravenar.cocktailapp.databinding.FragmentCoffeeMenuBinding
 
 class CoffeeFragment : Fragment() {
 
-    private var _binding: FragmentCoffeeBinding? = null
+    private var _binding: FragmentCoffeeMenuBinding? = null
 
     // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
@@ -24,7 +24,7 @@ class CoffeeFragment : Fragment() {
         val coffeViewModel =
             ViewModelProvider(this).get(CoffeViewModel::class.java)
 
-        _binding = FragmentCoffeeBinding.inflate(inflater, container, false)
+        _binding = FragmentCoffeeMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.tvCoffee

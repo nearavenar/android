@@ -35,7 +35,12 @@ enum class IngredientDrink (val resourceId: Int) {
     GENEVA(R.string.drink_ingredient_gin),
     ANGOSTURAS_BITTERS(R.string.drink_ingredient_angosturas),
     WHISKY_BLEND(R.string.drink_ingredient_whisky),
-    DRAMBUIE(R.string.drink_ingredient_drambuie);
+    WHISKY_IRISH(R.string.drink_ingredient_irish),
+    DRAMBUIE(R.string.drink_ingredient_drambuie),
+    SUGAR(R.string.drink_ingredient_sugar),
+    TEQUILA(R.string.drink_ingredient_tequila),
+    SALT(R.string.drink_ingredient_salt),
+    BEER(R.string.drink_ingredient_beer);
 
     fun getMessage(context: Context): String {
         return context.getString(resourceId)

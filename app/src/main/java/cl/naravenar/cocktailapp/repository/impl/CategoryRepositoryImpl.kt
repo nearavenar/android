@@ -18,10 +18,16 @@ class CategoryRepositoryImpl(context: Context) : CategoryRepository {
         return getAllCategoriesDam()
     }
 
-    override fun findCategoriaByName(name:String): MutableList<CategoryModel> {
+    override fun findCategoryByName(name:String): MutableList<CategoryModel> {
         return category.filter {
             it.getName().uppercase().contains(name.uppercase())
         }.toMutableList()
+    }
+
+    override fun findCategoryById(idCategory:Long):CategoryModel {
+        return category.first() {
+            it.getId() == idCategory
+        }
     }
 
     fun getAllCategoriesDam(): MutableList<CategoryModel> {

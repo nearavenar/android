@@ -1,7 +1,10 @@
 package cl.naravenar.cocktailapp.utils
 
+import cl.naravenar.cocktailapp.enums.SizePizza
 import cl.naravenar.cocktailapp.model.DrinkModel
 import cl.naravenar.cocktailapp.model.IngredientModel
+import android.content.Context
+import cl.naravenar.cocktailapp.R
 
 class DrinkUtil {
     fun shareFormater(drinkModel:DrinkModel):String{

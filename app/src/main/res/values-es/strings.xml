@@ -6,7 +6,7 @@
     <string name="title_coffee">Cafe</string>
     <string name="title_cocktail_detail">Detalle del trago</string>
     <string name="ti_search_filter_detail">Buscar...</string>
-    <string name="title_rating_bar_rink">Acidez</string>
+    <string name="title_rating_bar_rink">Valoración</string>
 
     <string name="title_category_rum">Tragos con Ron</string>
     <string name="coctail_description_ron">
@@ -120,18 +120,38 @@
 
     <!-- Rusty Clove -->
     <string name="drink_name_rusty_clove">Clavo Oxidado</string>
-    <string name="drink_description_rusty_clove">Aromático, potente, ligeramente dulce, gracias a los aromas del azafrán, nuez moscada y miel. El Clavo Oxidado con Drambuie y whiskey.</string>
+    <string name="drink_description_rusty_clove">Aromático, potente, ligeramente dulce, gracias a los aromas del azafrán, nuez moscada y miel. El Clavo Oxidado con Drambuie y whisky.</string>
     <string name="drink_preparation_rusty_clove">
         "Preparación:\n"En un vaso whiskero agregar 1 hielo cristalino, 2 oz de whisky, 1 oz de Drambue y decorar con una rodaja de naranja y 2 clavos de olor.
     </string>
 
     <!-- Irish Coffee -->
     <string name="drink_name_irish_coffee">Café irlandés</string>
-    <string name="drink_description_irish_coffee">El Irish Coffee es un cóctel cálido, rico y cremoso con un equilibrio perfecto de café amargo, azúcar dulce y suave whiskey irlandés. La crema batida agrega una textura lujosa y aterciopelada.</string>
+    <string name="drink_description_irish_coffee">El Irish Coffee es un cóctel cálido, rico y cremoso con un equilibrio perfecto de café amargo, azúcar dulce y suave whisky irlandés. La crema batida agrega una textura lujosa y aterciopelada.</string>
     <string name="drink_preparation_irish_coffee">
         "Preparación:\n"En el Geiger agregar el whisky 60 ml (2 oz), luego con un encendedor flamear el whisky (flama azul alrededor de este), dejar en ese estado hasta terminar la preparación.
         \n\nEn un vaso agregar 2 oz de café expreso, apagar el fuego del whisky (hay que taparlo para quitarle el oxígeno).
         \n\nAgregar el whisky del Geiger al vaso, agregar espuma de leche y para decorar con 3 granos de cafe.
+    </string>
+
+    <!-- Marga Chela -->
+    <string name="drink_name_marl_chela">Marga Chela</string>
+    <string name="drink_description_marl_chela">Margachela es una bebida fácil y deliciosa que combina el sabor de la margarita con una chela (cerveza) fría y refrescante. Puedes prepararlo en una licuadora como un frappé o en una coctelera para obtener un sabor más concentrado.</string>
+    <string name="drink_preparation_marl_chela">
+        "Preparación:\n"Escarchar la copa, ponemos sal en un plato y con un limón humedecer el borde de la copa, luego poner la copa boca abajo sobre el plato para que la sal se adhiera a ella.
+        \n\nEn la licuadora agregar el whisky, el Triple Sec, el jugo de limón, el hielo y la goma y prender la licuadora hasta que quede como una especie de granizado.
+        \n\nDespués se vierte la mezcla en la copa cuidando de no estropear el escarchado.
+        \n\nPoner una cerveza abierta dentro de la copa boca abajo, decoramos con una rodaja de limón y listo.
+    </string>
+
+    <!-- Crazy Coconut -->
+    <string name="drink_name_crazy_coconut">Coco Loco</string>
+    <string name="drink_description_crazy_coconut">El cóctel Coco Loco es una delicia tropical que se originó en el Caribe. Se dice que fue creado por primera vez en la década de 1970 y rápidamente ganó popularidad entre los turistas que visitaban la región.</string>
+    <string name="drink_preparation_crazy_coconut">
+        "Preparation:\n"En la coctelera, agregar el vodka, el ron, el tequila y mezclarás hasta que todos los licores se incorporen.
+        \n\nLuego, añadir la crema de coco, el jugo de limón y el hielo. Volver a agitar hasta que todos se haya integrado perfectamente.
+        \n\nLa mezcla estará lista cuando los licores se hayan fusionado con la crema de coco y el zumo de limón y el hielo se haya escarchado.
+        \n\nSirve en una copa o vaso grande, decora con una bombilla y unas rodajas de limón.
     </string>
 
     <string name="large_text_ingredientes">Ingrediente:\n- Pisco 2oz\n- Goma 1oz\n -Hielo 3 cubos\n- Menta 6 hojas</string>
@@ -143,11 +163,12 @@
     <string name="drink_unit_meas_leaves">"Hojas."</string>
     <string name="drink_unit_meas_to_crown">"Coronar."</string>
     <string name="drink_unit_meas_frappe">"Frappe."</string>
-    <string name="drink_unit_meas_gr">"gr"</string>
-    <string name="drink_unit_meas_quantity">"cu"</string>
+    <string name="drink_unit_meas_gr">"gr."</string>
+    <string name="drink_unit_meas_quantity">"cu."</string>
     <string name="drink_unit_meas_grain">"Grain."</string>
     <string name="drink_unit_meas_slice">"Lonja."</string>
     <string name="drink_unit_meas_wedges">"Cuñas"</string>
+    <string name="drink_unit_meas_frost">"Escarchar"</string>
 
     <!-- Ingredient of drink-->
     <string name="drink_ingredient_ice_frappe">"Hielo Frappe"</string>
@@ -183,8 +204,95 @@
     <string name="drink_ingredient_w_rum">"Ron Blanco"</string>
     <string name="drink_ingredient_vodka">"Vodka"</string>
     <string name="drink_ingredient_gin">"Gin"</string>
+    <string name="drink_ingredient_tequila">"Tequila"</string>
     <string name="drink_ingredient_angosturas">"Amargo de Angosturas"</string>
     <string name="drink_ingredient_whisky">"Whisky Blend"</string>
+    <string name="drink_ingredient_irish">"Whisky irlandés"</string>
     <string name="drink_ingredient_drambuie">"Drambuie"</string>
+    <string name="drink_ingredient_sugar">"Azucar"</string>
+    <string name="drink_ingredient_salt">"Sal"</string>
+    <string name="drink_ingredient_beer">"Cerveza"</string>
+
+    <!-- Unit Meas of Pizza-->
+    <string name="pizza_unit_meas_gr">"gr."</string>
+    <string name="pizza_unit_meas_ml">"ml."</string>
+    <string name="pizza_unit_meas_dust">"espolvorear."</string>
+    <string name="pizza_unit_meas_cm">"cm."</string>
+
+    <!-- Size of Pizza-->
+    <string name="pizza_size_portion">"Porciones"</string>
+    <string name="pizza_size_ration">"Ración"</string>
+    <string name="pizza_size_ration_of">"de"</string>
+    <string name="pizza_size_personnel">"Personal"</string>
+    <string name="pizza_size_personal">"Personales"</string>
+    <string name="pizza_size_median">"Mediana"</string>
+    <string name="pizza_size_medium">"Medianas"</string>
+    <string name="pizza_size_familiar">"Familiar"</string>
+    <string name="pizza_size_family">"Familiares"</string>
+    <string name="pizza_size_xl">"XL"</string>
+
+    <!-- Ingredient of Pizza-->
+    <string name="pizza_ingredient_mozzarella_cheese">"Queso Mozzarella"</string>
+    <string name="pizza_ingredient_onion">"Cebolla"</string>
+    <string name="pizza_ingredient_red_onion">"Cebolla Morada"</string>
+    <string name="pizza_ingredient_onion_powder">"Cebolla en Polvo"</string>
+    <string name="pizza_ingredient_onion_julienne">"Cebolla en Juliana"</string>
+    <string name="pizza_ingredient_caramel_onion">"Cebolla Acaramelada"</string>
+    <string name="pizza_ingredient_olive_oil">"Aceite de Oliva"</string>
+    <string name="pizza_ingredient_pepperoni">"Pepperoni"</string>
+    <string name="pizza_ingredient_salami">"Salame"</string>
+    <string name="pizza_ingredient_olive">"Aceituna"</string>
+    <string name="pizza_ingredient_corn">"Choclo"</string>
+    <string name="pizza_ingredient_tomato_sauce">"Salsa de Tomate"</string>
+    <string name="pizza_ingredient_tomato">"Tomate"</string>
+    <string name="pizza_ingredient_barbecue_sauce">"Salsa Barbecue"</string>
+    <string name="pizza_ingredient_basil">"Albahaca"</string>
+    <string name="pizza_ingredient_sausage">"Salchicha"</string>
+    <string name="pizza_ingredient_minced_meat">"Carne Molida"</string>
+    <string name="pizza_ingredient_shredded_chicken">"Pollo Desmechado"</string>
+    <string name="pizza_ingredient_pineapple">"Piña"</string>
+    <string name="pizza_ingredient_bacon">"Tocinó"</string>
+    <string name="pizza_ingredient_ham">"jamón"</string>
+    <string name="pizza_ingredient_oregano">"Oregano"</string>
+    <string name="pizza_ingredient_garlic">"Ajo"</string>
+    <string name="pizza_ingredient_garlic_powder">"Ajo en Polvo"</string>
+    <string name="pizza_ingredient_flour">"Harina"</string>
+    <string name="pizza_ingredient_strong_flour">"Harina de Fuerza"</string>
+    <string name="pizza_ingredient_corn_flour">"Harina de maíz"</string>
+    <string name="pizza_ingredient_water">"Agua"</string>
+    <string name="pizza_ingredient_baking_powder">"Polvo de Hornear"</string>
+    <string name="pizza_ingredient_sugar">"Azucar"</string>
+    <string name="pizza_ingredient_salt">"Sal"</string>
+    <string name="pizza_ingredient_yeast">"Levadura"</string>
+    <string name="pizza_ingredient_semolina">"Sémola"</string>
+
+    <!-- Pizza Margarita-->
+    <string name="pizza_name_margarita">Pizza Margarita</string>
+    <string name="pizza_description_margarita">Se podría decir que es la madre de todas las pizzas. De hecho, algunos maestros pizzeros Italianos afirman que solo hay dos clases de pizza verdaderas: la pizza Margarita y la Pizza Napolitana. A nosotros nos gusta celebrar cualquier evento con una buena pizza, sobre todo si se trata del día internacional de la pizza.</string>
+    <string name="pizza_preparation_margarita">"Preparación:\n"Para esta increíble pizza Margarita, lo primero que debes hacer es alistar todos los ingredientes, estos son para una pizza grande.
+            \n\nLo primero que vamos a preparar es la masa, para esto coloca en una superficie plana la harina y forma un volcán. Al rededor agrega sal y pimienta al gusto, en el centro forma un hueco pequeño y coloca allí la levadura y una pizca de azúcar blanca, esto para ayudar a la levadura a que fermente más rápido.
+            \n\nLuego agrega el agua tibia y mezcla solo con la levadura, cuando empiece a formar espuma puedes mezclar todo la harina con el agua.
+            \n\nMezcla muy bien la masa de la pizza durante unos 10 minutos hasta que quede una masa compacta, homogénea y suave. Si notas que la masa está muy dura agrega un poco más de agua.
+            \n\nColoca la masa de pizza en un recipiente con un poco de aceite de oliva y tapa con papel trasparente de cocina. Deja que crezca durante 30 minutos.
+            \n\nPasados los 30 minutos estira la masa en una superficie plana y agrega harina para que no se pegue. Coloca en una bandeja para horno con un poco de harina y cubre la masa con la pasta de tomate y agrega tomillo al gusto.
+            \n\nLa pizza margarita es una pizza muy clásica que solo lleva queso tomate y albahaca, por lo tanto debes colocar una capa de queso mozzarella rallado, unas rodajas de tomate y agregar un poco de sal al gusto. Hornea durante 10 minutos a 175ºC.
+            \n\nServir y degustar esta deliciosa pizza margarita entre amigos o con la familia. Si te gustó esta receta o tienes alguna duda déjanos tus comentarios.
+    </string>
+
+    <!-- Pizza Nico-->
+    <string name="pizza_name_nico">Pizza Nico</string>
+    <string name="pizza_description_nico">Es una creación de la casa</string>
+    <string name="pizza_preparation_nico">"Preparación:\n"Incorporar en un recipiente la harina de fuerza, harina de maíz, polvo de hornear, ajo en polvo, cebolla en polvo.
+            \n\nRevolver para juntar todos los productos y luego hacer un volcán con la harina para incorporar el agua, azúcar y la levadura.
+            \n\nRevolver con una cuchara la mescla y luego incorporar la sal, seguir mesclando para agregar el aceite de oliva.
+            \n\nMesclar todo por unos minutos, cuando este mesclado sacar y mesclar a mano por unos 10 a 15 minutos (si la masa está muy fresca se puede agregar harina antes de amasar).
+            \n\nEn un recipiente agregar la harina y tapar con papel aluza, esperar entre 50 minutos a 1 hora a temperatura ambiente.
+            \n\nSacar la masa del recipiente y ahora hay que des gasificarla (aplastar la masa para quitar el aire), se aplasta con los dedos y luego la cortamos en 2.
+            \n\nEmbolar la masa desde los bordes al centro y luego la giramos hasta formar las bolas.
+            \n\nAhora hay que dejar las bolas en papel aluza por 1 hora para que repose y aumente su tamaño (se puede agregar harina abajo y arriba de la masa para que no se seque).
+            \n\nPrecalentar el horno a 270°, agregar sémola en el lugar que se va a formar la masa para luego dejar la masa encima de este, estirar con los dedos para ir dando la forma a la masa. Girar con los dedos para darle una mejor forma.
+            \n\nAgregar la salsa de tomate, el queso mozzarella, jamón y piña.
+            \n\nIncorporar la pizza al horno por unos 7 minutos aprox.
+    </string>
 
 </resources>

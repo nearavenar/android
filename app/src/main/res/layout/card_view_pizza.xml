@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container_pizza_detail"
+    android:background="@color/green_app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cv_adapter_cocktail_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_min"
+            android:layout_marginTop="@dimen/common_padding_min"
+            android:layout_marginEnd="@dimen/common_padding_min"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_view_pizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_pizza_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TITLE"
+                    android:layout_marginStart="@dimen/common_padding_min"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_pizza_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPTION"
+                    android:layout_marginTop="@dimen/common_padding_middle"
+                    android:layout_marginStart="@dimen/common_padding_min"
+                    android:layout_marginEnd="@dimen/common_padding_min"
+                    android:paddingBottom="@dimen/common_padding_min"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pizza_title"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+                <TextView
+                    android:id="@+id/tv_pizza_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIZE"
+                    app:layout_constraintStart_toStartOf="@+id/tv_pizza_ingredients"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pizza_description"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_pizza_description"
+                    android:layout_marginEnd="@dimen/common_padding_min"
+                    android:paddingBottom="@dimen/common_padding_min"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <ImageView
+                    android:id="@+id/img_drink_card_view_pizza"
+                    android:layout_width="@dimen/card_img_size"
+                    android:layout_height="@dimen/card_img_size"
+                    android:importantForAccessibility="no"
+                    android:layout_marginStart="@dimen/common_padding_min"
+                    android:src="@mipmap/ic_pizza_round"
+                    app:layout_constraintStart_toStartOf="@+id/card_view_pizza"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pizza_size" />
+
+                <TextView
+                    android:id="@+id/tv_pizza_ingredients"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:layout_marginStart="@dimen/common_padding_middle"
+                    android:text="@string/large_text_ingredientes"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/img_drink_card_view_pizza"
+                    app:layout_constraintTop_toTopOf="@+id/img_drink_card_view_pizza" />
+
+                <TextView
+                    android:id="@+id/tv_pizza_preparation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/common_padding_min"
+                    android:paddingTop="@dimen/common_padding_min"
+                    android:paddingEnd="@dimen/common_padding_min"
+                    android:paddingBottom="@dimen/common_padding_middle"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="preparation"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:layout_constraintStart_toStartOf="@+id/img_drink_card_view_pizza"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pizza_ingredients"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_pizza_ingredients" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/chb_favorite_item_card_pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/states_chb_favorite"
+                    app:buttonTint="@android:color/holo_red_light"
+                    app:layout_constraintTop_toTopOf="@+id/img_share_view_pizza"
+                    app:layout_constraintEnd_toStartOf="@+id/img_share_view_pizza"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_share_view_pizza"/>
+
+                <ImageView
+                    android:id="@+id/img_share_view_pizza"
+                    android:layout_width="@dimen/card_img_size_middle"
+                    android:layout_height="@dimen/card_img_size_middle"
+                    android:importantForAccessibility="no"
+                    android:layout_marginEnd="@dimen/common_padding_min"
+                    android:layout_marginTop="@dimen/common_padding_min"
+                    android:src="@mipmap/ic_share_category"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

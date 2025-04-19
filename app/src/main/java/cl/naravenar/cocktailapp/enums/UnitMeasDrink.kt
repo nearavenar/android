@@ -14,6 +14,7 @@ enum class UnitMeasDrink (val resourceId: Int) {
     GRAIN(R.string.drink_unit_meas_grain),
     WEDGES(R.string.drink_unit_meas_wedges),
     GR(R.string.drink_unit_meas_gr),
+    FROST(R.string.drink_unit_meas_frost),
     QUANTITY(R.string.drink_unit_meas_quantity);
 
     fun getMessage(context: Context): String {

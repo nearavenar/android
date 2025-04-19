@@ -23,6 +23,10 @@ class CocktailService(context: Context) {
     }
 
     fun findCategoriaByName(name:String): MutableList<CategoryModel> {
-        return categoryRepositoryImpl.findCategoriaByName(name)
+        return categoryRepositoryImpl.findCategoryByName(name)
+    }
+
+    fun findCategoryById(idCategory:Long): CategoryModel{
+        return categoryRepositoryImpl.findCategoryById(idCategory)
     }
 }

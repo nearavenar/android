@@ -9,17 +9,17 @@
         android:id="@+id/navigation_cocktail"
         android:name="cl.naravenar.cocktailapp.ui.cocktail.CategoryFragment"
         android:label="@string/title_cocktail"
-        tools:layout="@layout/fragment_cocktail" />
+        tools:layout="@layout/fragment_category_cocktail" />
 
     <fragment
         android:id="@+id/navigation_pizza"
         android:name="cl.naravenar.cocktailapp.ui.pizza.PizzaFragment"
         android:label="@string/title_pizza"
-        tools:layout="@layout/fragment_pizza" />
+        tools:layout="@layout/fragment_pizza_menu" />
 
     <fragment
         android:id="@+id/navigation_coffee"
         android:name="cl.naravenar.cocktailapp.ui.coffee.CoffeeFragment"
         android:label="@string/title_coffee"
-        tools:layout="@layout/fragment_coffee" />
+        tools:layout="@layout/fragment_coffee_menu" />
 </navigation>

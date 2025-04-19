@@ -8,15 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import cl.naravenar.cocktailapp.adapter.CategoryRecyclerAdapter
-import cl.naravenar.cocktailapp.databinding.FragmentCocktailBinding
+import cl.naravenar.cocktailapp.databinding.FragmentCategoryCocktailBinding
 import cl.naravenar.cocktailapp.model.CategoryModel
 import cl.naravenar.cocktailapp.service.CocktailService
 
 class CategoryFragment : Fragment() {
 
-    private var _binding: FragmentCocktailBinding? = null
+    private var _binding: FragmentCategoryCocktailBinding? = null
 
     private val binding get() = _binding!!
 
@@ -25,7 +24,7 @@ class CategoryFragment : Fragment() {
                               savedInstanceState: Bundle?): View {
 
         val cocktailService = CocktailService(requireContext())
-        _binding = FragmentCocktailBinding.inflate(inflater, container, false)
+        _binding = FragmentCategoryCocktailBinding.inflate(inflater, container, false)
         val root: View = binding.root
 /*
         val textView: TextView = binding.txtTitleCocktails

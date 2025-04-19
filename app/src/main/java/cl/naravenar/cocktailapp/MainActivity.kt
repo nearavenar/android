@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         //TODO -> Ocultar boton del menu por ahora ya que estas secciones no estan disponibles
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNav.menu.findItem(R.id.navigation_pizza).isVisible = false
+        //bottomNav.menu.findItem(R.id.navigation_pizza).isVisible = false
         bottomNav.menu.findItem(R.id.navigation_coffee).isVisible = false
 
         // Passing each menu ID as a set of Ids because each menu should be considered as top level destinations.

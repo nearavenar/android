@@ -18,12 +18,20 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
     override fun createDrink(drink: DrinkModel) {
         drinks.add(drink)
     }
-    override fun findDrinkByIdCategoria(idCategoria:Long): List<DrinkModel> {
+    override fun findDrinkByIdCategoria(idCategoria:Long): MutableList<DrinkModel> {
         listCocktails()
         return drinks.filter {
             it.getCategory().getId() == idCategoria
-        }
+        }.toMutableList()
     }
+
+    override fun findDrinkByName(name: String): MutableList<DrinkModel> {
+        listCocktails()
+        return drinks.filter {
+            it.getCategory().getName().equals(name)
+        }.toMutableList()
+    }
+
     override fun listCocktails(): MutableList<DrinkModel> {
         return listCocktailsDam()
     }
@@ -46,6 +54,8 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         createDrink(rustyClove())
         createDrink(manhattan())
         createDrink(irishCoffee())
+        createDrink(marlChela())
+        createDrink(crazyCoconut())
         return drinks
     }
 
@@ -401,7 +411,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
     }
 
     private fun rustyClove():DrinkModel{
-        var categoryRum = CategoryModel(5, context.resources.getString(R.string.title_category_whisky),true,"ic_while_run_category")
+        var categoryWhisky = CategoryModel(5, context.resources.getString(R.string.title_category_whisky),true,"ic_while_run_category")
 
         var unitMeasOz = UnitMeasurementModel(1,UnitMeasDrink.OZ.getMessage(context))
         var unitMeasSlice = UnitMeasurementModel(2,UnitMeasDrink.SLICE.getMessage(context))
@@ -421,7 +431,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_rusty_clove))
         drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_rusty_clove))
         drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
+        drinkModelMojito.setCategory(categoryWhisky)
         return drinkModelMojito
     }
 
@@ -439,9 +449,9 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
 
         var ingredients = listOf(
             IngredientModel(1,IngredientDrink.COFFEE_EXPRESS.getMessage(context), "2",unitMeasOz),
-            IngredientModel(2,IngredientDrink.WHISKY_BLEND.getMessage(context),"2",unitMeasOz),
+            IngredientModel(2,IngredientDrink.WHISKY_IRISH.getMessage(context),"2",unitMeasOz),
             IngredientModel(3,IngredientDrink.MILK_FOAM.getMessage(context),"1",unitToCrown),
-            IngredientModel(5,IngredientDrink.COFFEE_GRAIN.getMessage(context),"3",unitMeasCu))
+            IngredientModel(4,IngredientDrink.COFFEE_GRAIN.getMessage(context),"3",unitMeasCu))
 
         var drinkModelMojito = DrinkModel()
         drinkModelMojito.setId(1)
@@ -452,5 +462,59 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
         drinkModelMojito.setIngredients(ingredients)
         drinkModelMojito.setCategory(categoryRum)
         return drinkModelMojito
+    }
+
+    private fun marlChela():DrinkModel{
+        var categoryOther = CategoryModel(10, context.resources.getString(R.string.title_category_Other),true,"ic_other_category")
+
+        var unitMeasOz = UnitMeasurementModel(1,UnitMeasDrink.OZ.getMessage(context))
+        var unitFrost = UnitMeasurementModel(2,UnitMeasDrink.FROST.getMessage(context))
+        var unitQuantity = UnitMeasurementModel(3,UnitMeasDrink.QUANTITY.getMessage(context))
+        var unitToCrown = UnitMeasurementModel(4,UnitMeasDrink.TO_CROWN.getMessage(context))
+
+        var ingredients = listOf(
+            IngredientModel(1,IngredientDrink.LEMON.getMessage(context),"½",unitQuantity),
+            IngredientModel(2,IngredientDrink.WHISKY_BLEND.getMessage(context), "1½",unitMeasOz),
+            IngredientModel(3,IngredientDrink.TRIPLE_SEX.getMessage(context),"1",unitMeasOz),
+            IngredientModel(4,IngredientDrink.LEMON_JUICE.getMessage(context),"1",unitMeasOz),
+            IngredientModel(5,IngredientDrink.ERASER.getMessage(context),"½",unitMeasOz),
+            IngredientModel(6,IngredientDrink.SALT.getMessage(context),"0",unitFrost),
+            IngredientModel(7,IngredientDrink.BEER.getMessage(context),"1",unitQuantity),
+            IngredientModel(8,IngredientDrink.FRAPPE_ICE.getMessage(context),"0",unitToCrown))
+
+        var drink = DrinkModel()
+        drink.setId(1)
+        drink.setName(context.resources.getString(R.string.drink_name_marl_chela))
+        drink.setImage("ic_marl_chela")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_marl_chela))
+        drink.setDescription(context.resources.getString(R.string.drink_description_marl_chela))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryOther)
+        return drink
+    }
+
+    private fun crazyCoconut():DrinkModel{
+        var categoryOther = CategoryModel(10, context.resources.getString(R.string.title_category_Other),true,"ic_other_category")
+
+        var unitMeasOz = UnitMeasurementModel(1,UnitMeasDrink.OZ.getMessage(context))
+        var unitToCrown = UnitMeasurementModel(2,UnitMeasDrink.TO_CROWN.getMessage(context))
+
+        var ingredients = listOf(
+            IngredientModel(1,IngredientDrink.VODKA.getMessage(context),"1",unitMeasOz),
+            IngredientModel(2,IngredientDrink.WHITE_RUM.getMessage(context), "1",unitMeasOz),
+            IngredientModel(3,IngredientDrink.TEQUILA.getMessage(context),"1",unitMeasOz),
+            IngredientModel(4,IngredientDrink.COCONUT_CREAM.getMessage(context),"1",unitMeasOz),
+            IngredientModel(5,IngredientDrink.LEMON_JUICE.getMessage(context),"½",unitMeasOz),
+            IngredientModel(6,IngredientDrink.FRAPPE_ICE.getMessage(context),"¾",unitToCrown))
+
+        var drink = DrinkModel()
+        drink.setId(1)
+        drink.setName(context.resources.getString(R.string.drink_name_crazy_coconut))
+        drink.setImage("ic_crazy_coconut")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_crazy_coconut))
+        drink.setDescription(context.resources.getString(R.string.drink_description_crazy_coconut))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryOther)
+        return drink
     }
 }

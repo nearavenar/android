@@ -9,15 +9,14 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import cl.naravenar.cocktailapp.adapter.DrinksRecyclerAdapter
-import cl.naravenar.cocktailapp.databinding.FragmentCocktailDetailBinding
+import cl.naravenar.cocktailapp.databinding.FragmentCocktailMenuBinding
 import cl.naravenar.cocktailapp.model.CategoryModel
 import cl.naravenar.cocktailapp.model.DrinkModel
 import cl.naravenar.cocktailapp.service.CocktailService
 
 class DrinkFragment : Fragment() {
 
-    private var _binding: FragmentCocktailDetailBinding? = null
-
+    private var _binding: FragmentCocktailMenuBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -41,7 +40,7 @@ class DrinkFragment : Fragment() {
             CocktailDetailViewModelFactory(drinkModel)
         }*/
 
-        _binding = FragmentCocktailDetailBinding.inflate(inflater, container, false)
+        _binding = FragmentCocktailMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         //val tvPreparation: TextView = binding.tvCocktailDetailPreparation
