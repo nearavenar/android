@@ -9,10 +9,12 @@ import cl.naravenar.cocktailapp.model.DrinkModel
 import cl.naravenar.cocktailapp.model.IngredientModel
 import cl.naravenar.cocktailapp.model.UnitMeasurementModel
 import cl.naravenar.cocktailapp.repository.DrinkRepository
+import cl.naravenar.cocktailapp.shared.DrinkStorage
+import cl.naravenar.cocktailapp.shared.PizzaStorage
 
 class DrinkRepositoryImpl(context: Context) : DrinkRepository {
 
-    private val drinks: MutableList<DrinkModel> = ArrayList()
+    private var drinks: MutableList<DrinkModel> = ArrayList()
     private var context:Context = context
 
     override fun createDrink(drink: DrinkModel) {
@@ -37,25 +39,31 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
     }
 
     fun listCocktailsDam(): MutableList<DrinkModel>{
-        drinks.clear()
-        createDrink(createClassicMojito())
-        createDrink(createMaracuyaMojito())
-        createDrink(createDaiquiri())
-        createDrink(createStrawberryDaiquiri())
-        createDrink(createPinaColada())
-        createDrink(createCosmopolitan())
-        createDrink(createMoscowMuleRussia())
-        createDrink(createMartiniExpreso())
-        createDrink(createClassicTomCollins())
-        createDrink(createGinTonic())
-        createDrink(createSunriseTequila())
-        createDrink(createMargaritaTequila())
-        createDrink(createOldFashioned())
-        createDrink(rustyClove())
-        createDrink(manhattan())
-        createDrink(irishCoffee())
-        createDrink(marlChela())
-        createDrink(crazyCoconut())
+        //drinks.clear()
+
+        if (DrinkStorage.loadDrinksList(context).size != 0){
+            drinks = DrinkStorage.loadDrinksList(context)
+        }else {
+            createDrink(createClassicMojito())
+            createDrink(createMaracuyaMojito())
+            createDrink(createDaiquiri())
+            createDrink(createStrawberryDaiquiri())
+            createDrink(createPinaColada())
+            createDrink(createCosmopolitan())
+            createDrink(createMoscowMuleRussia())
+            createDrink(createMartiniExpreso())
+            createDrink(createClassicTomCollins())
+            createDrink(createGinTonic())
+            createDrink(createSunriseTequila())
+            createDrink(createMargaritaTequila())
+            createDrink(createOldFashioned())
+            createDrink(rustyClove())
+            createDrink(manhattan())
+            createDrink(irishCoffee())
+            createDrink(marlChela())
+            createDrink(crazyCoconut())
+            DrinkStorage.saveDrinkList(context, drinks)
+        }
         return drinks
     }
 
@@ -75,15 +83,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(5,IngredientDrink.WHITE_RUM.getMessage(context),"2",unitMeasOz),
             IngredientModel(6,IngredientDrink.MINERAL_WATER.getMessage(context),"0",unitMeasToCrown))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_mojito))
-        drinkModelMojito.setImage("ic_mojito_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_mojito))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_mojito))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(1)
+        drink.setName(context.resources.getString(R.string.drink_name_mojito))
+        drink.setImage("ic_mojito_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_mojito))
+        drink.setDescription(context.resources.getString(R.string.drink_description_mojito))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createMaracuyaMojito():DrinkModel{
@@ -103,15 +111,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(6,IngredientDrink.MARACUYA_PULP.getMessage(context),"2",unitMeasOz),
             IngredientModel(7,IngredientDrink.MINERAL_WATER.getMessage(context),"0",unitMeasToCrown))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_maracuya_mojito))
-        drinkModelMojito.setImage("ic_mojito_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_maracuya_mojito))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_maracuya_mojito))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(2)
+        drink.setName(context.resources.getString(R.string.drink_name_maracuya_mojito))
+        drink.setImage("ic_mojito_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_maracuya_mojito))
+        drink.setDescription(context.resources.getString(R.string.drink_description_maracuya_mojito))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createDaiquiri():DrinkModel{
@@ -128,15 +136,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(4,IngredientDrink.ICE_CUBE.getMessage(context),"2",unitMeasCube),
             IngredientModel(5,IngredientDrink.TRIPLE_SEX.getMessage(context),"1",unitMeasToDash))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_daiquiri))
-        drinkModelMojito.setImage("ic_daiquiri_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_daiquiri))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_daiquiri))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(3)
+        drink.setName(context.resources.getString(R.string.drink_name_daiquiri))
+        drink.setImage("ic_daiquiri_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_daiquiri))
+        drink.setDescription(context.resources.getString(R.string.drink_description_daiquiri))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createStrawberryDaiquiri ():DrinkModel{
@@ -157,15 +165,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(5,IngredientDrink.ICE_CUBE.getMessage(context),"2",unitMeasCube),
             IngredientModel(6,IngredientDrink.BASIL_LEAF.getMessage(context),"2",unitMeasLeaves))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_strawberry_daiquiri))
-        drinkModelMojito.setImage("ic_daiquiri_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_strawberry_daiquiri))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_strawberry_daiquiri))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(4)
+        drink.setName(context.resources.getString(R.string.drink_name_strawberry_daiquiri))
+        drink.setImage("ic_daiquiri_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_strawberry_daiquiri))
+        drink.setDescription(context.resources.getString(R.string.drink_description_strawberry_daiquiri))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createPinaColada():DrinkModel{
@@ -182,15 +190,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(6,IngredientDrink.MISAMPLAS.getMessage(context),"1",unitMeasLeaves),
             IngredientModel(5,IngredientDrink.FRAPPE_ICE.getMessage(context),"2/4",unitMeasFrappe))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_pina_colada))
-        drinkModelMojito.setImage("ic_pina_colada_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_pina_colada))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_pina_colada))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(5)
+        drink.setName(context.resources.getString(R.string.drink_name_pina_colada))
+        drink.setImage("ic_pina_colada_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_pina_colada))
+        drink.setDescription(context.resources.getString(R.string.drink_description_pina_colada))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createCosmopolitan():DrinkModel{
@@ -209,15 +217,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(2,IngredientDrink.VODKA.getMessage(context),"2",unitMeasOz),
             IngredientModel(4,IngredientDrink.ICE_CUBE.getMessage(context),"3",unitMeasCubo))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_cosmopolitan))
-        drinkModelMojito.setImage("ic_cosmopolitan_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_cosmopolitan))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_cosmopolitan))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(6)
+        drink.setName(context.resources.getString(R.string.drink_name_cosmopolitan))
+        drink.setImage("ic_cosmopolitan_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_cosmopolitan))
+        drink.setDescription(context.resources.getString(R.string.drink_description_cosmopolitan))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createMoscowMuleRussia():DrinkModel{
@@ -235,15 +243,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(3,IngredientDrink.VODKA.getMessage(context),"2",unitMeasOz),
             IngredientModel(4,IngredientDrink.GINGER_BEER.getMessage(context),"0",unitMeasToCrown))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_moscow_mule_rusia))
-        drinkModelMojito.setImage("ic_mojito_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_moscow_mule_rusia))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_moscow_mule_rusia))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(7)
+        drink.setName(context.resources.getString(R.string.drink_name_moscow_mule_rusia))
+        drink.setImage("ic_mojito_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_moscow_mule_rusia))
+        drink.setDescription(context.resources.getString(R.string.drink_description_moscow_mule_rusia))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createMartiniExpreso():DrinkModel{
@@ -261,15 +269,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(5,IngredientDrink.ICE_CUBE.getMessage(context),"3-4",unitMeasCube),
             IngredientModel(6,IngredientDrink.COFFEE_GRAIN.getMessage(context),"2-3",unitMeasGrain))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_express_martini))
-        drinkModelMojito.setImage("ic_expresso_martini_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_express_martini))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_express_martini))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(8)
+        drink.setName(context.resources.getString(R.string.drink_name_express_martini))
+        drink.setImage("ic_expresso_martini_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_express_martini))
+        drink.setDescription(context.resources.getString(R.string.drink_description_express_martini))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createClassicTomCollins():DrinkModel{
@@ -286,15 +294,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(4,IngredientDrink.ICE_CUBE.getMessage(context),"3/4",unitMeasCube),
             IngredientModel(6,IngredientDrink.TONIC_WATER.getMessage(context),"0",unitMeasToCrown))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_tom_collins))
-        drinkModelMojito.setImage("ic_tom_collins_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_tom_collins))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_tom_collins))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(9)
+        drink.setName(context.resources.getString(R.string.drink_name_tom_collins))
+        drink.setImage("ic_tom_collins_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_tom_collins))
+        drink.setDescription(context.resources.getString(R.string.drink_description_tom_collins))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createGinTonic():DrinkModel{
@@ -313,15 +321,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(5,IngredientDrink.TONIC_WATER.getMessage(context),"3/4",unitMeasToCrown),
             IngredientModel(6,IngredientDrink.ANISE_STARS.getMessage(context),"0",unitMeasToCrown))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_gin_tonic))
-        drinkModelMojito.setImage("ic_gin_tonic_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_gin_tonic))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_gin_tonic))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(10)
+        drink.setName(context.resources.getString(R.string.drink_name_gin_tonic))
+        drink.setImage("ic_gin_tonic_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_gin_tonic))
+        drink.setDescription(context.resources.getString(R.string.drink_description_gin_tonic))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createSunriseTequila():DrinkModel{
@@ -340,16 +348,16 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(3,"Jugo de Naranja","150",unitMeasMl),
             IngredientModel(6,"Granadina","1",unitMeasCoronar))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName("Tequila Sunrise")
+        var drink = DrinkModel()
+        drink.setId(11)
+        drink.setName("Tequila Sunrise")
         //drinkModelMojito.setImage(resources.getString(R.mipmap.ic_mojito_drink))
-        drinkModelMojito.setImage("ic_margarita_tequila_drink")
-        drinkModelMojito.setPreparation("Preparación:\nAgregar directo al vaso 1 hielo cristalino, 2 oz de tequila, rellenar con jugo de naranja dejando 1 o 2 dedos para luego llenar con granadina, Luego agregar la decoración, en este caso con se agregó una rodaja de naranja.")
-        drinkModelMojito.setDescription("DESCRIPCION DEL TRAGO")
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        drink.setImage("ic_margarita_tequila_drink")
+        drink.setPreparation("Preparación:\nAgregar directo al vaso 1 hielo cristalino, 2 oz de tequila, rellenar con jugo de naranja dejando 1 o 2 dedos para luego llenar con granadina, Luego agregar la decoración, en este caso con se agregó una rodaja de naranja.")
+        drink.setDescription("DESCRIPCION DEL TRAGO")
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createMargaritaTequila():DrinkModel{
@@ -370,16 +378,16 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(5,IngredientDrink.TRIPLE_SEX.getMessage(context),"1",unitMeasDash),
             IngredientModel(6,IngredientDrink.ICE_CUBE.getMessage(context),"3",unitMeasCubo))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName("Tequila Margarita")
+        var drink = DrinkModel()
+        drink.setId(12)
+        drink.setName("Tequila Margarita")
         //drinkModelMojito.setImage(resources.getString(R.mipmap.ic_mojito_drink))
-        drinkModelMojito.setImage("ic_sunrise_tequila_drink")
-        drinkModelMojito.setPreparation("Preparación:\nPrimero hay que enllantar la copa con tajín, pasar un pedazo de limón por el borde de la copa, pasar el borde de la copa en el tajín. Agregar directo en la coctelera 1 oz de goma, 1 oz de jugo de limón, 2 oz de tequila, 1 dash de triple sec, agregar 3 o 4 cubos de hielos, coctelera para juntar todos los sabores. Servir con colador oruga en la copa, luego decoramos con una rodaja de limón de pica.")
-        drinkModelMojito.setDescription("DESCRIPCION DEL TRAGO")
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        drink.setImage("ic_sunrise_tequila_drink")
+        drink.setPreparation("Preparación:\nPrimero hay que enllantar la copa con tajín, pasar un pedazo de limón por el borde de la copa, pasar el borde de la copa en el tajín. Agregar directo en la coctelera 1 oz de goma, 1 oz de jugo de limón, 2 oz de tequila, 1 dash de triple sec, agregar 3 o 4 cubos de hielos, coctelera para juntar todos los sabores. Servir con colador oruga en la copa, luego decoramos con una rodaja de limón de pica.")
+        drink.setDescription("DESCRIPCION DEL TRAGO")
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun createOldFashioned():DrinkModel{
@@ -399,15 +407,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(6,IngredientDrink.CRYSTALLINE_ICE.getMessage(context),"0",unitMeasToCrown),
             IngredientModel(7,IngredientDrink.MARASCHINO_AND_ORANGE.getMessage(context),"0",unitMeasToCrown))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_old_fashioned))
-        drinkModelMojito.setImage("ic_rusty_nail_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_old_fashioned))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_old_fashioned))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(13)
+        drink.setName(context.resources.getString(R.string.drink_name_old_fashioned))
+        drink.setImage("ic_rusty_nail_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_old_fashioned))
+        drink.setDescription(context.resources.getString(R.string.drink_description_old_fashioned))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun rustyClove():DrinkModel{
@@ -424,15 +432,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(4,IngredientDrink.ORANGE.getMessage(context),"1",unitMeasSlice),
             IngredientModel(5,IngredientDrink.CLOVE.getMessage(context),"2",unitMeasCu))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_rusty_clove))
-        drinkModelMojito.setImage("ic_rusty_nail_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_rusty_clove))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_rusty_clove))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryWhisky)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(14)
+        drink.setName(context.resources.getString(R.string.drink_name_rusty_clove))
+        drink.setImage("ic_rusty_nail_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_rusty_clove))
+        drink.setDescription(context.resources.getString(R.string.drink_description_rusty_clove))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryWhisky)
+        return drink
     }
 
     private fun manhattan():DrinkModel{
@@ -453,15 +461,15 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(3,IngredientDrink.MILK_FOAM.getMessage(context),"1",unitToCrown),
             IngredientModel(4,IngredientDrink.COFFEE_GRAIN.getMessage(context),"3",unitMeasCu))
 
-        var drinkModelMojito = DrinkModel()
-        drinkModelMojito.setId(1)
-        drinkModelMojito.setName(context.resources.getString(R.string.drink_name_irish_coffee))
-        drinkModelMojito.setImage("ic_irish_coffee_drink")
-        drinkModelMojito.setPreparation(context.resources.getString(R.string.drink_preparation_irish_coffee))
-        drinkModelMojito.setDescription(context.resources.getString(R.string.drink_description_irish_coffee))
-        drinkModelMojito.setIngredients(ingredients)
-        drinkModelMojito.setCategory(categoryRum)
-        return drinkModelMojito
+        var drink = DrinkModel()
+        drink.setId(15)
+        drink.setName(context.resources.getString(R.string.drink_name_irish_coffee))
+        drink.setImage("ic_irish_coffee_drink")
+        drink.setPreparation(context.resources.getString(R.string.drink_preparation_irish_coffee))
+        drink.setDescription(context.resources.getString(R.string.drink_description_irish_coffee))
+        drink.setIngredients(ingredients)
+        drink.setCategory(categoryRum)
+        return drink
     }
 
     private fun marlChela():DrinkModel{
@@ -483,7 +491,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(8,IngredientDrink.FRAPPE_ICE.getMessage(context),"0",unitToCrown))
 
         var drink = DrinkModel()
-        drink.setId(1)
+        drink.setId(16)
         drink.setName(context.resources.getString(R.string.drink_name_marl_chela))
         drink.setImage("ic_marl_chela")
         drink.setPreparation(context.resources.getString(R.string.drink_preparation_marl_chela))
@@ -508,7 +516,7 @@ class DrinkRepositoryImpl(context: Context) : DrinkRepository {
             IngredientModel(6,IngredientDrink.FRAPPE_ICE.getMessage(context),"¾",unitToCrown))
 
         var drink = DrinkModel()
-        drink.setId(1)
+        drink.setId(17)
         drink.setName(context.resources.getString(R.string.drink_name_crazy_coconut))
         drink.setImage("ic_crazy_coconut")
         drink.setPreparation(context.resources.getString(R.string.drink_preparation_crazy_coconut))

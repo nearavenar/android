@@ -7,8 +7,8 @@ import cl.naravenar.cocktailapp.repository.impl.PizzaRepositoryImpl
 class PizzaService (context: Context) {
     private var pizzaRepository : PizzaRepositoryImpl = PizzaRepositoryImpl(context);
 
-    fun getAllCategories(): MutableList<PizzaModel> {
-        return pizzaRepository.getAllCategoriesDam()
+    fun getAllPizzas(): MutableList<PizzaModel> {
+        return pizzaRepository.getAllPizzas()
     }
 
     fun findCategoriaByName(name:String): MutableList<PizzaModel> {

@@ -217,7 +217,9 @@
     <string name="pizza_unit_meas_gr">"gr."</string>
     <string name="pizza_unit_meas_ml">"ml."</string>
     <string name="pizza_unit_meas_dust">"Dust."</string>
+    <string name="pizza_unit_meas_grease_dough">"Grease the dough."</string>
     <string name="pizza_unit_meas_cm">"cm."</string>
+    <string name="pizza_unit_meas_cu">"cu."</string>
 
     <!-- Size of Pizza-->
     <string name="pizza_size_portion">"Portions"</string>
@@ -233,6 +235,7 @@
 
     <!-- Ingredient of Pizza-->
     <string name="pizza_ingredient_mozzarella_cheese">"Mozzarella Cheese"</string>
+    <string name="pizza_ingredient_parmesan_cheese">"Queso Parmesan"</string>
     <string name="pizza_ingredient_onion">"Onion"</string>
     <string name="pizza_ingredient_red_onion">"Red Onion"</string>
     <string name="pizza_ingredient_onion_powder">"Onion Powder"</string>
@@ -253,6 +256,7 @@
     <string name="pizza_ingredient_pineapple">"Pineapple"</string>
     <string name="pizza_ingredient_bacon">"Bacon"</string>
     <string name="pizza_ingredient_ham">"Ham"</string>
+    <string name="pizza_ingredient_serrano_ham">"Serrano Ham"</string>
     <string name="pizza_ingredient_oregano">"Oreganox"</string>
     <string name="pizza_ingredient_garlic">"Garlic"</string>
     <string name="pizza_ingredient_garlic_powder">"Garlic Powder"</string>
@@ -265,6 +269,7 @@
     <string name="pizza_ingredient_salt">"Salt"</string>
     <string name="pizza_ingredient_yeast">"Baking Powder"</string>
     <string name="pizza_ingredient_semolina">"Semolina"</string>
+    <string name="pizza_ingredient_arugula">"Arugula"</string>
 
     <!-- Classic Mojito Drink-->
     <string name="pizza_name_margarita">Margarita Pizza</string>
@@ -293,6 +298,60 @@
         \n\nPreheat the oven to 270°, add semolina in the place where the dough is going to form and then leave the dough on top of it, stretch with your fingers to shape the dough. Twist with your fingers to give it a better shape.
         \n\nAdd the tomato sauce, mozzarella cheese, ham and pineapple.
         \n\nAdd the pizza to the oven for about 7 minutes.
+    </string>
+
+    <!-- Italian Pizza-->
+    <string name="pizza_name_italian">Italian Pizza</string>
+    <string name="pizza_description_italian">The history of Italian pizza dates back to the city of Naples, where it became popular in the seventeenth century as a dish among humble inhabitants. At the end of the eighteenth century, pizza became a symbol of contemporary Italian gastronomy.</string>
+    <string name="pizza_preparation_italian">"Preparation:\n"Sift the two flours so that they mix well.
+        \n\nPut the yeast in a large bowl and dissolve it with all the water.
+        \n\nAdd 250g of flour and mix with a wooden spoon for a couple of minutes until the mixture is smooth and homogeneous.
+        \n\nAdd the remaining flour, oil and salt. Mix all the ingredients with the spoon and then use one hand, with the other hand hold the bowl. The dough will turn out quite sticky, but it is normal.
+        \n\nWash your hands and smear a large work surface with a little oil. Pour the pizza dough here. If you have oily hands, it will help you not to stick the dough too much.
+        \n\nWork the dough for about 5 minutes, with one hand hold the dough by one end and with the base of the other hand stretch the dough, then fold it over again. Repeat these movements several times. You will notice how the dough incorporates air and becomes more and more elastic.
+        \n\nBrush a clean bowl with oil and place the dough inside.
+        \n\nCover it with a cloth and let it rest for 15 minutes. After this time you will notice the dough with a different appearance, smoother, more elastic and less sticky.
+        \n\nThe folded phases that come now are very important to get our dough to encompass more air and to structure it. Now you have to make two folds, gently stretch the dough and fold it on itself, turn it over so that it stays in front of you vertically and repeat another fold.
+        \n\nPlace the dough back in the bowl and cover it with a cloth. Repeat this operation another two times at 15-minute intervals, always very gently. When you are done with the three rests and corresponding folds, put the dough back in the bowl, cover it tightly with cling film. Let it rest for 2-3 hours at room temperature then and put it in the coldest part of the refrigerator to rest for at least 24 hours.
+    </string>
+
+    <!-- Nicolas-style pizza dough -->
+    <string name="pizza_name_dough_pizza">Nicolas-style pizza dough</string>
+    <string name="pizza_description_dough_pizza">It is a dough that was created by failure and error, trying different methods of preparation and ingredients.</string>
+    <string name="pizza_preparation_dough_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
+    <!-- Napolitan-style pizza dough -->
+    <string name="pizza_name_dough_napolitan_pizza">Napolitan-style pizza dough</string>
+    <string name="pizza_description_dough_napolitan_pizza">The Neapolitan-style pizza dough is the traditional base of pizza originating from Naples, Italy, and is characterized by its simplicity, airy texture, and slightly tangy flavor.</string>
+    <string name="pizza_preparation_dough_napolitan_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
+    <!-- Basic-style pizza dough -->
+    <string name="pizza_name_dough_basic_pizza">Basic-style pizza dough</string>
+    <string name="pizza_description_dough_basic_pizza">The basic pizza dough is a simple and versatile preparation made with a few common ingredients. It is used as a base for many styles of homemade and commercial pizza. It has a soft and elastic texture before baking, and when cooked, it can be crispy on the outside and tender on the inside, depending on the thickness and cooking.</string>
+    <string name="pizza_preparation_dough_basic_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
     </string>
 
 </resources>

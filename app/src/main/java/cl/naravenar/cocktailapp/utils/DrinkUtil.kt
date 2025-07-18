@@ -4,7 +4,11 @@ import cl.naravenar.cocktailapp.enums.SizePizza
 import cl.naravenar.cocktailapp.model.DrinkModel
 import cl.naravenar.cocktailapp.model.IngredientModel
 import android.content.Context
+import android.widget.TextView
 import cl.naravenar.cocktailapp.R
+import cl.naravenar.cocktailapp.model.PizzaModel
+import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
 
 class DrinkUtil {
     fun shareFormater(drinkModel:DrinkModel):String{
@@ -33,6 +37,14 @@ class DrinkUtil {
         return ingredient
     }
 
+    fun ingredientCantPizza(ingredientsList:List<IngredientModel>, number:Int):String{
+        var ingredient = "Ingredientes:\n"
+        for (value in ingredientsList) {
+            ingredient += "${value.getName()} ${if(value.getAmount() == "0") "" else mostrarMontoFormateado((value.getAmount().toIntOrNull() ?: 1) * number)} ${value.getUnitMeasurement().getName()} \n"
+        }
+        return ingredient
+    }
+
     fun maxLines(max:Int, currentLength:Int, value:String):Int{
         if (max == currentLength) {
             return value.length
@@ -46,5 +58,25 @@ class DrinkUtil {
         }else{
             return  android.R.style.TextAppearance_Holo
         }
+    }
+
+    fun mostrarMontoFormateado(textView: TextView, monto: Int) {
+        val symbols = DecimalFormatSymbols().apply {
+            groupingSeparator = '.' // Puedes usar ',' si quieres estilo inglés
+        }
+        val formatter = DecimalFormat("#,###", symbols)
+        val montoFormateado = formatter.format(monto)
+
+        textView.text = "$montoFormateado" // O agrega moneda: "$ $montoFormateado"
+    }
+
+    fun mostrarMontoFormateado(monto: Int):String {
+        val symbols = DecimalFormatSymbols().apply {
+            groupingSeparator = '.' // Puedes usar ',' si quieres estilo inglés
+        }
+        val formatter = DecimalFormat("#,###", symbols)
+        val montoFormateado = formatter.format(monto)
+
+        return montoFormateado // O agrega moneda: "$ $montoFormateado"
     }
 }

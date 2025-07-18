@@ -217,7 +217,9 @@
     <string name="pizza_unit_meas_gr">"gr."</string>
     <string name="pizza_unit_meas_ml">"ml."</string>
     <string name="pizza_unit_meas_dust">"espolvorear."</string>
+    <string name="pizza_unit_meas_grease_dough">"Aceitar la masa."</string>
     <string name="pizza_unit_meas_cm">"cm."</string>
+    <string name="pizza_unit_meas_cu">"cu."</string>
 
     <!-- Size of Pizza-->
     <string name="pizza_size_portion">"Porciones"</string>
@@ -233,6 +235,7 @@
 
     <!-- Ingredient of Pizza-->
     <string name="pizza_ingredient_mozzarella_cheese">"Queso Mozzarella"</string>
+    <string name="pizza_ingredient_parmesan_cheese">"Queso Parmesano"</string>
     <string name="pizza_ingredient_onion">"Cebolla"</string>
     <string name="pizza_ingredient_red_onion">"Cebolla Morada"</string>
     <string name="pizza_ingredient_onion_powder">"Cebolla en Polvo"</string>
@@ -253,6 +256,7 @@
     <string name="pizza_ingredient_pineapple">"Piña"</string>
     <string name="pizza_ingredient_bacon">"Tocinó"</string>
     <string name="pizza_ingredient_ham">"jamón"</string>
+    <string name="pizza_ingredient_serrano_ham">"Jamón Serrano"</string>
     <string name="pizza_ingredient_oregano">"Oregano"</string>
     <string name="pizza_ingredient_garlic">"Ajo"</string>
     <string name="pizza_ingredient_garlic_powder">"Ajo en Polvo"</string>
@@ -265,6 +269,7 @@
     <string name="pizza_ingredient_salt">"Sal"</string>
     <string name="pizza_ingredient_yeast">"Levadura"</string>
     <string name="pizza_ingredient_semolina">"Sémola"</string>
+    <string name="pizza_ingredient_arugula">"Rucula"</string>
 
     <!-- Pizza Margarita-->
     <string name="pizza_name_margarita">Pizza Margarita</string>
@@ -286,13 +291,67 @@
             \n\nRevolver para juntar todos los productos y luego hacer un volcán con la harina para incorporar el agua, azúcar y la levadura.
             \n\nRevolver con una cuchara la mescla y luego incorporar la sal, seguir mesclando para agregar el aceite de oliva.
             \n\nMesclar todo por unos minutos, cuando este mesclado sacar y mesclar a mano por unos 10 a 15 minutos (si la masa está muy fresca se puede agregar harina antes de amasar).
-            \n\nEn un recipiente agregar la harina y tapar con papel aluza, esperar entre 50 minutos a 1 hora a temperatura ambiente.
+            \n\nEn un recipiente agregar la harina y tapar con papel aluza, esperar entre  50 minutos a 1 hora a temperatura ambiente.
             \n\nSacar la masa del recipiente y ahora hay que des gasificarla (aplastar la masa para quitar el aire), se aplasta con los dedos y luego la cortamos en 2.
             \n\nEmbolar la masa desde los bordes al centro y luego la giramos hasta formar las bolas.
             \n\nAhora hay que dejar las bolas en papel aluza por 1 hora para que repose y aumente su tamaño (se puede agregar harina abajo y arriba de la masa para que no se seque).
             \n\nPrecalentar el horno a 270°, agregar sémola en el lugar que se va a formar la masa para luego dejar la masa encima de este, estirar con los dedos para ir dando la forma a la masa. Girar con los dedos para darle una mejor forma.
             \n\nAgregar la salsa de tomate, el queso mozzarella, jamón y piña.
             \n\nIncorporar la pizza al horno por unos 7 minutos aprox.
+    </string>
+
+    <!-- Pizza Italiana -->
+    <string name="pizza_name_italian">Pizza Italiana</string>
+    <string name="pizza_description_italian">La historia de la pizza italiana se remonta a la ciudad de Nápoles, donde se popularizó en el siglo XVII como un plato entre los habitantes humildes. A finales del siglo XVIII, la pizza se convirtió en un símbolo de la gastronomía italiana contemporánea.</string>
+    <string name="pizza_preparation_italian">"Preparación:\n"Tamizas las dos harinas para que se mezclen bien.
+        \n\nPon la levadura en un bol grande y disuelvela con todo el agua.
+        \n\nAñade 250 g de harina y mezcla con una cuchara de madera durante un par de minutos hasta que la mezcla esté lisa y homogénea.
+        \n\nAñade lo que queda de harina, aceite y sal. Mezcla todos los ingredientes con la cuchara y luego usa una mano, con la otra mano sujeta el bol. La masa resultará bastante pegajosa, pero es normal.
+        \n\nLávate las manos y unta una superficie de trabajo amplia con un poco de aceite. Vuelca aquí la masa de la pizza. Si tienes las manos aceitosas te ayudará a que no se te pegue mucho la masa.
+        \n\nTrabaja la masa durante aproximadamente 5 minutos, con una mano sujeta la masa por un extremo y con la base de la otra mano estira la masa, luego la doblas sobre si misma otra vez. Repite estos movimientos varias veces. Notará como la masa va incorporando aire y queda cada vez más elástica.
+        \n\nUntar en un bol limpio con aceite y coloca dentro la masa.
+        \n\nTapala con un trapo y dejala reposar 15 minutos. Transcurrido este tiempo notarás la masa con otro aspecto, más liso, elástico y menos pegajoso.
+        \n\nLas fases de pliegues que vienen ahora son muy importantes para conseguir que nuestra masa englobe más aire y para que se vaya estructurando. Ahora hay que hacer dos pliegues, estira suavemente la masa y doblala sobre si misma, dale la vuelta para que se quede frente a ti en vertical y repite otro pliegue. Vuelve a colocar la masa en el bol y cúbrela con un trapo. Repite esta operación otras dos veces con intervalos de 15 minutos siempre con mucha suavidad. Cuando acabes con los tres reposos y correspondientes pliegues vuelve a poner la masa en el bol, tápalo bien con film transparente.
+        \n\nDéjalo reposar 2-3 horas a temperatura ambiente luego y ponlo en la parte más fría del frigorífico a reposar mínimo 24 horas.
+    </string>
+
+    <!-- Masa de pizza estilo Nico -->
+    <string name="pizza_name_dough_pizza">Masa de pizza estilo Nico</string>
+    <string name="pizza_description_dough_pizza">Es una masa que fue creada a falla y error, probando diferentes metodos de preparacion e ingredientes.</string>
+    <string name="pizza_preparation_dough_pizza">"Preparation:\n"Para esta increíble pizza Margherita, lo primero que necesitas hacer es preparar todos los ingredientes; estos son para una pizza grande.
+        \n\nLo primero que vamos a preparar es la masa. Para esto, coloca la harina en una superficie plana y forma un volcán. A su alrededor, añade sal y pimienta al gusto; en el centro, forma un pequeño agujero y coloca la levadura y un pellizco de azúcar blanca allí, esto para ayudar a que la levadura fermente más rápido. Luego, añade el agua tibia y mezcla solo con la levadura.
+        \n\nCuando comience a espumar, puedes mezclar toda la harina con el agua.
+        \n\nMezcla bien la masa de pizza durante unos 10 minutos hasta que tengas una masa compacta, homogénea y suave. Si notas que la masa está demasiado dura, agrega un poco más de agua.
+        \n\nColoca la masa de pizza en un bol con un poco de aceite de oliva y cubre con papel transparente de cocina. Deja que suba durante 30 minutos.
+        \n\nDespués de 30 minutos, extienda la masa sobre una superficie plana y añada harina para que no se pegue. Coloque en una bandeja para hornear con un poco de harina y cubra la masa con la pasta de tomate y agregue tomillo al gusto.
+        \n\nLa pizza margherita es una pizza muy clásica que solo tiene tomate, queso y albahaca, así que debe colocar una capa de queso mozzarella rallado, algunas rodajas de tomate y añadir un poco de sal al gusto. Hornee durante 10 minutos a 175ºC.
+        \n\nSirva y saboree esta deliciosa pizza margherita con amigos o familiares. Si le gustó esta receta o tiene alguna pregunta, déjenos sus comentarios.
+    </string>
+
+    <!-- Napolitan-style pizza dough -->
+    <string name="pizza_name_dough_napolitan_pizza">Masa de pizza al estilo Napolitano</string>
+    <string name="pizza_description_dough_napolitan_pizza">La masa de pizza estilo napolitano es la base tradicional de la pizza originaria de Nápoles, Italia, y se caracteriza por su sencillez, textura aireada y sabor ligeramente ácido.</string>
+    <string name="pizza_preparation_dough_napolitan_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
+    <!-- Basic-style pizza dough -->
+    <string name="pizza_name_dough_basic_pizza">Masa de pizza Basica</string>
+    <string name="pizza_description_dough_basic_pizza">La masa de pizza básica es una preparación sencilla y versátil hecha con pocos ingredientes comunes. Se utiliza como base para muchos estilos de pizza casera y comercial. Tiene una textura suave y elástica antes de hornearse, y al cocinarse puede resultar crujiente por fuera y tierna por dentro, dependiendo del grosor y la cocción.</string>
+    <string name="pizza_preparation_dough_basic_pizza">"Preparation:\n"Para esta increíble pizza Margherita, lo primero que necesitas hacer es preparar todos los ingredientes; estos son para una pizza grande.
+        \n\nLo primero que vamos a preparar es la masa. Para esto, coloca la harina en una superficie plana y forma un volcán. A su alrededor, añade sal y pimienta al gusto; en el centro, forma un pequeño agujero y coloca la levadura y un pellizco de azúcar blanca allí, esto para ayudar a que la levadura fermente más rápido. Luego, añade el agua tibia y mezcla solo con la levadura.
+        \n\nCuando comience a espumar, puedes mezclar toda la harina con el agua.
+        \n\nMezcla bien la masa de pizza durante unos 10 minutos hasta que tengas una masa compacta, homogénea y suave. Si notas que la masa está demasiado dura, agrega un poco más de agua.
+        \n\nColoca la masa de pizza en un bol con un poco de aceite de oliva y cubre con papel transparente de cocina. Deja que suba durante 30 minutos.
+        \n\nDespués de 30 minutos, extienda la masa sobre una superficie plana y añada harina para que no se pegue. Coloque en una bandeja para hornear con un poco de harina y cubra la masa con la pasta de tomate y agregue tomillo al gusto.
+        \n\nLa pizza margherita es una pizza muy clásica que solo tiene tomate, queso y albahaca, así que debe colocar una capa de queso mozzarella rallado, algunas rodajas de tomate y añadir un poco de sal al gusto. Hornee durante 10 minutos a 175ºC.
+        \n\nSirva y saboree esta deliciosa pizza margherita con amigos o familiares. Si le gustó esta receta o tiene alguna pregunta, déjenos sus comentarios.
     </string>
 
 </resources>

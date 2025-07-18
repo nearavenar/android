@@ -8,25 +8,41 @@
     android:background="@color/green_app"
     android:orientation="vertical">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tx_input_search"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:hint="@string/ti_search_filter_detail"
-        app:endIconMode="clear_text"
-        android:layout_marginStart="@dimen/common_padding_min"
-        android:layout_marginEnd="@dimen/common_padding_min">
+        android:orientation="horizontal">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:background="@color/white"
-            android:id="@+id/tx_edt_input_search"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tx_input_search"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="text">
-        </com.google.android.material.textfield.TextInputEditText>
+            android:layout_marginStart="@dimen/common_padding_min"
+            android:layout_marginEnd="@dimen/common_padding_min"
+            android:hint="@string/ti_search_filter_detail"
+            app:endIconMode="clear_text">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tx_edt_input_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/btn_order_by_favorite_pizza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/order_by_favorite_24"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/img_share_view_pizza"
+            app:layout_constraintEnd_toStartOf="@+id/img_share_view_pizza"
+            app:layout_constraintTop_toTopOf="@+id/img_share_view_pizza" />
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recicle_view_pizzas"

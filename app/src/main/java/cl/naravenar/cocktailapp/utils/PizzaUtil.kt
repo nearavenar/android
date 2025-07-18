@@ -7,7 +7,7 @@ import cl.naravenar.cocktailapp.model.PizzaModel
 
 class PizzaUtil {
 
-    fun textSizePizza(context: Context, pizza: PizzaModel): String {
+    fun textSizePizza(context: Context, pizza: PizzaModel, number:Int): String {
         val sb = StringBuilder()
         var result = pizza.getSize().getName()
 
@@ -22,7 +22,7 @@ class PizzaUtil {
 
         sb.append(context.getString(R.string.pizza_size_ration))
         sb.append(" ")
-        sb.append(pizza.getQuantity())
+        sb.append(pizza.getQuantity()*number)
         sb.append(" ")
         sb.append(result)
         sb.append(" ")
@@ -34,7 +34,19 @@ class PizzaUtil {
         sb.append("\n")
         sb.append(context.getString(R.string.pizza_size_portion))
         sb.append(" ")
-        sb.append(pizza.getSize().getPortion())
+        sb.append(pizza.getSize().getPortion()*number)
         return sb.toString()
+    }
+
+    fun shareFormater(pizzaModel: PizzaModel, value:Int):String{
+        var ingredient = ""
+        for (ing in pizzaModel.getIngredients()){
+            ingredient+="${ing.getName()} ${value(ing.getAmount().toInt(), value)} ${ing.getUnitMeasurement().getName()}\n"
+        }
+        return "${pizzaModel.getName()}\n\n$ingredient\n${pizzaModel.getPreparation()}"
+    }
+
+    fun value(valueOne:Int, valueTwo:Int):Int{
+        return valueOne * valueTwo
     }
 }

@@ -6,6 +6,7 @@ import cl.naravenar.cocktailapp.R
 enum class IngredientPizza (val resourceId: Int) {
 
     MOZZARELLA_CHEESE(R.string.pizza_ingredient_mozzarella_cheese),
+    PARMESAN_CHEESE(R.string.pizza_ingredient_parmesan_cheese),
     ONION(R.string.pizza_ingredient_onion),
     RED_ONION(R.string.pizza_ingredient_red_onion),
     ONION_POWDER(R.string.pizza_ingredient_onion_powder),
@@ -26,6 +27,8 @@ enum class IngredientPizza (val resourceId: Int) {
     PINEAPPLE(R.string.pizza_ingredient_pineapple),
     BACON(R.string.pizza_ingredient_bacon),
     HAM(R.string.pizza_ingredient_ham),
+    SERRANO_HAM(R.string.pizza_ingredient_serrano_ham),
+    ARUGULA(R.string.pizza_ingredient_arugula),
     OREGANO(R.string.pizza_ingredient_oregano),
     GARLIC(R.string.pizza_ingredient_garlic),
     GARLIC_POWDER(R.string.pizza_ingredient_garlic_powder),
