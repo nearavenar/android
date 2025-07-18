@@ -5,14 +5,20 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import cl.naravenar.cocktailapp.MainActivity
 import cl.naravenar.cocktailapp.R
+import cl.naravenar.cocktailapp.adapter.PizzaRecyclerAdapter.PizzaViewHolderViewHolder
 import cl.naravenar.cocktailapp.model.DrinkModel
+import cl.naravenar.cocktailapp.model.PizzaModel
+import cl.naravenar.cocktailapp.shared.DrinkStorage
+import cl.naravenar.cocktailapp.shared.PizzaStorage
 import cl.naravenar.cocktailapp.utils.DrinkUtil
 
 class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, private var context: Context) : RecyclerView.Adapter<DrinksRecyclerAdapter.CocktailDetailViewHolder>() {
@@ -34,6 +40,7 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
 
         holder.ingredients.text = DrinkUtil().ingredientDrink(drinkModel.getIngredients())
         holder.preparation.text = drinkModel.getPreparation()
+        holder.btnFavorite.isChecked = drinkModel.getFavorite()
 
         var defaultValue = true
         holder.cardViewDetail.setOnClickListener{
@@ -53,6 +60,8 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
             context.startActivity(Intent.createChooser(sharingIntent,context.getString(R.string.app_name)))
         }
 
+        clickFavorite(holder, drinkModel)
+
         val resourceId = context.resources.getIdentifier(drinkModel.getImage(), "mipmap", context.packageName)
         if (resourceId != 0) {
             holder.imgDrink.setImageResource(resourceId)
@@ -67,6 +76,13 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
         holder.ratingBarDrink.visibility = View.GONE
     }
 
+    private fun clickFavorite(holder: CocktailDetailViewHolder, drinkModel: DrinkModel) {
+        holder.btnFavorite.setOnClickListener {
+            drinkModel.setFavorite(!drinkModel.getFavorite())
+            DrinkStorage.toggleFavorite(context, drinkModel.getId())
+        }
+    }
+
     class CocktailDetailViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title: TextView = itemView.findViewById(R.id.tv_cocktail_detail_title)
         var ingredients: TextView = itemView.findViewById(R.id.tv_cocktail_detail_ingredients)
@@ -77,7 +93,7 @@ class DrinksRecyclerAdapter (private var cocktailsList: List<DrinkModel>, privat
         var drinkDescription: TextView = itemView.findViewById(R.id.tv_drink_description)
         var ratingBarDrink: RatingBar = itemView.findViewById(R.id.rating_bar_rink)
         var tvRatingBarDrink: TextView = itemView.findViewById(R.id.tv_rating_bar_rink)
-        //var description: TextView = itemView.findViewById(R.id.tv_cocktail_detail_description)
+        var btnFavorite: CheckBox = itemView.findViewById(R.id.chb_favorite_item_card)
         //var layout: LinearLayout = itemView.findViewById(R.id.cv_adapter_cocktail_detail)
     }
 }

@@ -1,236 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Cocktail</string>
-    <string name="title_cocktail">Cocktail</string>
+    <string name="app_name">Cocktel</string>
+    <string name="title_cocktail">Cocteleria</string>
     <string name="title_pizza">Pizza</string>
-    <string name="title_coffee">Coffee</string>
-    <string name="title_cocktail_detail">Detail of Cocktail</string>
-    <string name="ti_search_filter_detail">Search...</string>
-    <string name="title_rating_bar_rink">Acidity</string>
+    <string name="title_coffee">Cafe</string>
+    <string name="title_cocktail_detail">Detalle del trago</string>
+    <string name="ti_search_filter_detail">Buscar...</string>
+    <string name="title_rating_bar_rink">Valoración</string>
 
-    <string name="title_category_rum">Drinks with Rum</string>
+    <string name="title_category_rum">Tragos con Ron</string>
     <string name="coctail_description_ron">
-        "Classic Mojito.\n"
-        "Passion fruit mojito.\n"
-        "Daiquiri.\n"
-        "Strawberry and Basil Daiquiri.\n"
-        "Pina Colada.\n"
+        "Mojito Clásico.\n""Mojito Maracuyá.\n""Daiquiri.\n""Daiquiri Frutilla y Albahaca.\n""Piña Colada.\n"
     </string>
 
-    <string name="title_category_pisco">Drinks with Pisco</string>
+    <string name="title_category_pisco">Tragos con Pisco</string>
     <string name="coctail_description_pisco">
-        "Classic Pisco Sour.\n"
-        "Pisco Sour with albumen.\n"
-        "Pisco Sour Infused with Tea.\n"
-        "Peruvian Pisco Sour.\n"
-        "Pisco Sour with Strawberry Basil flavor.\n"
+        "Pisco Sour Clásico.\n""Pisco Sour con albúmina.\n""Pisco Sour Infusionado con té.\n""Pisco Sour Peruano.\n""Pisco Sour con sabor a Albahaca Fresa.\n"
     </string>
 
-    <string name="title_category_vodka">Drinks with Bodka</string>
+    <string name="title_category_vodka">Tragos con Vodka</string>
     <string name="coctail_description_vodka">
-        "Cosmopolitan style Sex and the City.\n"
-        "Moscow Mule from Russia.\n"
-        "Express Martini.\n"
-        "Sunrise Tequila.\n"
-        "Margarita Tequila.\n"
+        "Cosmopolitan estilo Sex and the City.\n""Moscow Mule desde rusia.\n""Martini Expreso.\n"
     </string>
 
-    <string name="title_category_tequila">Drinks with Tequila</string>
+    <string name="title_category_tequila">Tragos con Tequila</string>
     <string name="coctail_description_tequila">
         "Tequila Sunrise.\n""Tequila Margarita.\n"
     </string>
 
-    <string name="title_category_whisky">Drinks with Whisky</string>
+    <string name="title_category_whisky">Tragos con Whisky</string>
     <string name="coctail_description_whisky">
-        "Rusty Nail.\n""Manhattan.\n""Old Fashioned on the rock.\n"
+        "Clavo Oxidado.\n""Manhattan.\n""Old Fashioned on the rock.\n"
     </string>
 
-    <string name="title_category_ginebra">Drinks with Ginebra</string>
+    <string name="title_category_ginebra">Tragos con ginebra</string>
     <string name="coctail_description_ginebra">
-        "Dry martini.\n""Dirty martini.\n""Dry martini Wet.\n"Classic Negroni.\n"
+        "Dry martini.\n""Dirty martini.\n""Dry martini Wet.\n"Negroni clásico.\n"
     </string>
 
-    <string name="title_category_ramazzotti">Drinks with Ramazzotti</string>
+    <string name="title_category_ramazzotti">Tragos con Ramazzotti</string>
     <string name="coctail_description_ramazzotti">
-        "Classic Ramazzotti.\n""Classic Ramazzotti.\n"
+        "Ramazzotti clásico.\n""Ramazzotti clásico.\n"
     </string>
 
-    <string name="title_category_aperol">Drinks with Aperol</string>
+    <string name="title_category_aperol">Tragos con Aperol</string>
     <string name="coctail_description_aperol">
-        "Classic Italian Aperol Spritz.\n""Classic Italian Aperol Spritz.\n"
+        "Aperol Spritz clásico italiano.\n""Aperol Spritz clásico italiano.\n"
     </string>
 
-    <string name="title_category_cachaza">Drinks with Cachaça</string>
+
+    <string name="title_category_cachaza">Tragos con Cachaça</string>
     <string name="coctail_description_cachaza">
-        "Classic Brazilian Caipirinha.\n""Caipirinha with vodka.\n""Strawberry caipirinha.\n"
+        "Caipirinha brasileña clásica.\n""Caipirinha con vodka.\n""Caipirinha de frutilla.\n"
+    </string>
+
+    <string name="title_category_Other">Otros</string>
+    <string name="coctail_description_other">
+        "Trago Uno.\n""Trago Dos.\n""Trago Tres.\n"
     </string>
 
     <!-- Classic Mojito Drink-->
-    <string name="drink_name_mojito">Classic Mojito</string>
-    <string name="drink_description_mojito">This cocktail, so famous worldwide, is the homeland of Cuba, the country where it was born. The mojito is one of the most popular drinks in cocktails and since its invention, numerous versions have emerged that vary from the original.</string>
-    <string name="drink_preparation_mojito">
-        "Preparación:\n"En un vaso tumbler agregar la menta, 1 oz de Goma, 1 oz jugo de limón natural, amanerar suavemente para no romper las hojas, llenar el vaso con hielo frappe, 2 oz de ron y revolver tratando de subir la menta y llenar con agua mineral con gas.
-    </string>
-
-    <string name="drink_ingredients_mint_mojito">"Mint"</string>
-    <string name="drink_ingredients_eraser_mojito">"Eraser"</string>
-    <string name="drink_ingredients_lemon_juice_mojito">"Lemon juice"</string>
-    <string name="drink_ingredients_ice_frappe_mojito">"Ice Frappe"</string>
-    <string name="drink_ingredients_rum_mojito">"White or Golden Rum"</string>
-    <string name="drink_ingredients_mineral_mojito">"Mineral water"</string>
-
-    <string name="drink_unit_meas_leaves_mojito">"leaves."</string>
-    <string name="drink_unit_meas_oz_mojito">"oz."</string>
-    <string name="drink_unit_meas_frappe_mojito">"Frappe."</string>
-    <string name="drink_unit_meas_to_crown_mojito">"To crown."</string>
+    <string name="drink_name_mojito">Mojito Clásico</string>
+    <string name="drink_description_mojito">Este cóctel tan famoso a nivel mundial hace patria de Cuba, el país que lo vio nacer. El mojito es uno de las bebidas más populares en la coctelería y desde su invención han surgido numerosas versiones que varían del original.</string>
+    <string name="drink_preparation_mojito">"Preparación:\n"En un vaso tumbler agregar la menta, 1 oz de Goma, 1 oz jugo de limón natural, amanerar suavemente para no romper las hojas, llenar el vaso con hielo frappe, 2 oz de ron y revolver tratando de subir la menta y llenar con agua mineral con gas.</string>
 
     <!-- Maracuya Mojito Drink-->
-    <string name="drink_name_maracuya_mojito">Maracuya Mojito</string>
-    <string name="drink_preparation_maracuya_mojito">"Preparation:\n"In a tumbler glass add the mint, 1 oz of Goma, 1 oz of natural lemon juice, shake gently so as not to break the leaves, fill the glass with frappe ice, 2 oz of rum and stir trying to raise the mint and fill with water mineral with gas.</string>
-    <string name="drink_description_maracuya_mojito">As a Cuban mojito riff, it has the essential mojito ingredients like mint, rum, and soda, but adds a tropical flavor with passion fruit pulp.</string>
-
-    <string name="drink_ingredients_maracuya_mint_mojito">"Mint"</string>
-    <string name="drink_ingredients_maracuya_eraser_mojito">"Eraser"</string>
-    <string name="drink_ingredients_maracuya_lemon_juice_mojito">"Lemon juice"</string>
-    <string name="drink_ingredients_maracuya_ice_frappe_mojito">"Ice Frappe"</string>
-    <string name="drink_ingredients_maracuya_rum_mojito">"White or Golden Rum"</string>
-    <string name="drink_ingredients_maracuya_juice_mojito">"Maracuya pulp"</string>
-    <string name="drink_ingredients_maracuya_mineral_mojito">"Mineral water"</string>
+    <string name="drink_name_maracuya_mojito">Mojito de Maracuya</string>
+    <string name="drink_preparation_maracuya_mojito">"Preparación:\n"En un vaso tumbler agregar la menta, 1 oz de Goma, 1 oz jugo de limón natural, amanerar suavemente para no romper las hojas, llenar el vaso con hielo frappe, 2 oz de ron y revolver tratando de subir la menta y llenar con agua mineral con gas.</string>
+    <string name="drink_description_maracuya_mojito">Como riff de mojito cubano, tiene los ingredientes esenciales del mojito como menta, ron y gaseosa, pero agrega un sabor tropical con la pulpa de maracuyá.</string>
 
     <!-- Daiquiri Drink-->
     <string name="drink_name_daiquiri">Daiquiri</string>
-    <string name="drink_preparation_daiquiri">"Preparation:\n"In a shaker add 1 oz of natural lemon juice, 1 oz of Goma, 2 oz of rum, 1 Dash of Triple Sec. (one touch). Add 2 or 3 ice cubes, then mix (When the shaker is packed [cold]).</string>
-    <string name="drink_description_daiquiri">It is a classic cocktail, sweet, simple and refreshing, combining rum with lemon juice and sugar. This drink is known for its balance of sweet and sour flavors and rum. It is a versatile cocktail that can be enjoyed on a hot summer day.</string>
-
-    <string name="drink_unit_meas_cube_daiquiri">"Cube."</string>
-    <string name="drink_unit_meas_oz_daiquiri">"oz."</string>
-    <string name="drink_unit_meas_dash_daiquiri">"Dash."</string>
-
-    <string name="drink_ingredients_eraser_daiquiri">"Eraser"</string>
-    <string name="drink_ingredients_lemon_juice_daiquiri">"Lemon juice"</string>
-    <string name="drink_ingredients_rum_daiquiri">"White or Golden Rum"</string>
-    <string name="drink_ingredients_ice_cube_daiquiri">"Ice Cube"</string>
-    <string name="drink_ingredients_triple_sex_daiquiri">"Triple Sex"</string>
+    <string name="drink_preparation_daiquiri">"Preparación:\n"En una coctelera agregar 1 oz jugo de limón natural, 1 oz de Goma, 2 oz de ron, 1 Dash de Triple Sec. (un toque). Agregar 2 o 3 hielos, luego mesclar (Cuando la coctelera esta empavonada [fría]).</string>
+    <string name="drink_description_daiquiri">Es un cóctel clásico, dulce, simple y refrescante, que combina ron con jugo de limón y azúcar. Este trago es conocido por su equilibrio de sabores agridulces y ron. Es un cóctel versátil que se puede disfrutar en un caluroso día de verano.</string>
 
     <!-- Strawberry Daiquiri Drink-->
-    <string name="drink_name_strawberry_daiquiri">Strawberry Daiquiri</string>
-    <string name="drink_preparation_strawberry_daiquiri">"Preparation:\n"In a shaker add 1 oz of Goma, 1 oz of natural lemon juice, 2 oz of rum, 1 Dash of Triple Sec. (one touch). Add strawberry pulp, add basil and 3 or 4 ice, then mix (When the shaker is packed [cold]).</string>
-    <string name="drink_description_strawberry_daiquiri">The Strawberry Daiquiri is a sweeter version of the traditional Daiquiri, but just as fresh and pleasant to drink with friends in a moment of relaxation. With this drink you will remember summer vacations and the feeling of being by the pool with this slushy delight perfect to beat the heat.</string>
-
-    <string name="drink_unit_meas_cube_strawberry_daiquiri">"Cube."</string>
-    <string name="drink_unit_meas_oz_strawberry_daiquiri">"oz."</string>
-    <string name="drink_unit_meas_dash_strawberry_daiquiri">"Dash."</string>
-    <string name="drink_unit_meas_leaves_strawberry_daiquiri">"Leaves."</string>
-
-    <string name="drink_ingredients_eraser_strawberry_daiquiri">"Eraser"</string>
-    <string name="drink_ingredients_lemon_strawberry_juice_daiquiri">"Lemon juice"</string>
-    <string name="drink_ingredients_rum_strawberry_daiquiri">"White or Golden Rum"</string>
-    <string name="drink_ingredients_ice_cube_strawberry_daiquiri">"Ice Cube"</string>
-    <string name="drink_ingredients_triple_sex_strawberry_daiquiri">"Triple Sex"</string>
-    <string name="drink_ingredients_basil_leaf_strawberry_daiquiri">"Basil Leaf"</string>
-
+    <string name="drink_name_strawberry_daiquiri">Daiquiri de Frutilla</string>
+    <string name="drink_preparation_strawberry_daiquiri">"Preparación:\n"En una coctelera agregar 1 oz de Goma, 1 oz jugo de limón natural, 2 oz de ron, 1 Dash de Triple Sec. (un toque). Agregar pulpa de frutilla, agregar albahaca y 3 o 4 hielos, luego mesclar (Cuando la coctelera esta empavonada [fría]).</string>
+    <string name="drink_description_strawberry_daiquiri">El Daiquiri de fresa es una versión más dulce del Daiquiri tradicional, pero igual de fresca y agradable de tomar junto con los amigos en un momento de relax. Con esta bebida recordarás las vacaciones de verano y la sensación de estar junto a la piscina con esta delicia granizada perfecta para combatir el calor.</string>
 
     <!-- Pina Colada Drink-->
-    <string name="drink_name_pina_colada">Pina Colada</string>
-    <string name="drink_preparation_pina_colada">"Preparation:\n"In a shaker add 2 oz of pineapple pulp, 2 oz of coconut cream, 2 oz of rum, 1 oz of gum and 2/4 of ice cubes, then mix (When the shaker is packed [cold]).\nIn a glass add ¾ of ice, add the mixture to the glass and decorate with the misamplas</string>
-    <string name="drink_description_pina_colada">The piña colada is a classic tropical cocktail that combines the sweet and refreshing flavor of pineapple with the smoothness of coconut.</string>
-
-    <string name="drink_unit_meas_cube_pina_colada">"Cube."</string>
-    <string name="drink_unit_meas_oz_pina_colada">"oz."</string>
-    <string name="drink_unit_meas_dash_pina_colada">"Dash."</string>
-    <string name="drink_unit_meas_leaves_pina_colada">"Leaves."</string>
-
-    <string name="drink_ingredients_pina_just_pina_colada">"Pineapple Pulp"</string>
-    <string name="drink_ingredients_coconut_cream_pina_colada">"Coconut cream"</string>
-    <string name="drink_ingredients_rum_pina_colada">"White Rum"</string>
-    <string name="drink_ingredients_eraser_pina_colada">"Eraser"</string>
-    <string name="drink_ingredients_misamplas_pina_colada">"Misamplas"</string>
-    <string name="drink_ingredients_ice_frappe_pina_colada">"Frappe Ice"</string>
-
+    <string name="drink_name_pina_colada">Piña Colada</string>
+    <string name="drink_preparation_pina_colada">"Preparación:\n"En una coctelera agregar 2 oz de pulpa de piña, 2 oz crema de coco, 2 oz de ron, 1 oz de goma y 2/4 de hielos frape, luego mesclar (Cuando la coctelera esta empavonada [fría]).\nEn una copa agregar ¾ de hielos, agregar la mescla a la copa y decorar con el misamplas</string>
+    <string name="drink_description_pina_colada">La piña colada es un cóctel tropical clásico que combina el sabor dulce y refrescante de la piña con la suavidad del coco.</string>
 
     <!-- Cosmopolitan Drink-->
     <string name="drink_name_cosmopolitan">Cosmopolitan</string>
-    <string name="drink_preparation_cosmopolitan">"Preparation:\n"First there you have to cool the glass with ice, rotating it for a few seconds to have a better cooling of it. Add 40 grams of blueberries, a dash of lemon, 1 dash of triple sec to the shaker. Then mash in the shaker, add 2 oz of vodka, add 3 to 4 ice cubes and shake. Remove the ice from the glass and add the double-strained cocktail, then decorate. (You can press the citrus to release a little oil and set it on fire for a second)</string>
-    <string name="drink_description_cosmopolitan">The classic and potent Cosmopolitan includes vodka, Triple Sec, cranberry juice and ice and is usually garnished with orange peel.</string>
-
-    <string name="drink_unit_meas_gr_cosmopolitan">"gr"</string>
-    <string name="drink_unit_meas_dash_cosmopolitan">"Dash."</string>
-    <string name="drink_unit_meas_oz_cosmopolitan">"oz."</string>
-    <string name="drink_unit_meas_cube_cosmopolitan">"Cube."</string>
-
-    <string name="drink_ingredients_blueberries_cosmopolitan">"Blueberries</string>
-    <string name="drink_ingredients_lemon_juice_cosmopolitan">"Lemon juice"</string>
-    <string name="drink_ingredients_triple_sex_cosmopolitan">"Triple Sex"</string>
-    <string name="drink_ingredients_vodka_cosmopolitan">"Vodka"</string>
-    <string name="drink_ingredients_cube_ice_cosmopolitan">"Ice Cube"</string>
-
+    <string name="drink_preparation_cosmopolitan">"Preparación:\n"Primero ahí que enfriar la copa con hielo, girándolo por unos segundos para tener un mejor enfriamiento de esta. Agregar en la coctelera 40 gramos de arándanos, un dash de limón, 1 dash de triple sec. Luego macerar en la coctelera, agregar 2 oz de vodka, agregar 3 a 4 cubos de hielo y agitar. Retirar el hielo de la copa y agregar el coctel con el doble colado, luego decorar. (Se puede presionar el cítrico para que vote un poco de aceite y prenderle fuego por un segundo)</string>
+    <string name="drink_description_cosmopolitan">El clásico y potente Cosmopolitan incluye vodka, Triple Sec, jugo de arándano y hielo y generalmente se adorna con cáscara de naranja.</string>
 
     <!-- Moscow Mule Rusia Drink-->
-    <string name="drink_name_moscow_mule_rusia">Moscow Mule Russia</string>
-    <string name="drink_preparation_moscow_mule_rusia">"Preparación:\n"Add 2 lemon wedges to the metal glass, macerate the lemon, add 3/4 frape ice, 2 oz of vodka, fill with ginger beer. Then add the decoration, in this case with some ginger slices</string>
-    <string name="drink_description_moscow_mule_rusia">The Moscow Mule is rumored to have been invented in 1941 in New York. The only real link to Russia is that it has vodka, hence the Russian-sounding title.</string>
-
-    <string name="drink_unit_meas_wedges_moscow_mule_rusia">"Wedges"</string>
-    <string name="drink_unit_meas_frappe_moscow_mule_rusia">"Frappe."</string>
-    <string name="drink_unit_meas_oz_moscow_mule_rusia">"oz."</string>
-    <string name="drink_unit_meas_to_crown_moscow_mule_rusia">"To Crown."</string>
-
-    <string name="drink_ingredients_lemon_moscow_mule_rusia">"Lemon</string>
-    <string name="drink_ingredients_frappe_moscow_mule_rusia">"Frappe Ice"</string>
-    <string name="drink_ingredients_vodka_moscow_mule_rusia">"Vodka"</string>
-    <string name="drink_ingredients_ginger_beer_moscow_mule_rusia">"Ginger beer"</string>
-    <string name="drink_ingredients_ginger_moscow_mule_rusia">"Ginger"</string>
-
+    <string name="drink_name_moscow_mule_rusia">Moscow Mule Rusia</string>
+    <string name="drink_preparation_moscow_mule_rusia">"Preparación:\n"Agregar en el vaso metálico 2 gajos de limón, macerar el limón, agregar hielo frape 3/4, 2 oz de vodka, llenar con ginger beer. Luego agregar la decoración, en este caso con unas rebanadas de jengibre</string>
+    <string name="drink_description_moscow_mule_rusia">Se rumorea que el Moscow Mule fue inventado en 1941 en Nueva York. El único vínculo real con Rusia es que tiene vodka, de ahí el título que suena ruso.</string>
 
     <!-- Express Martini Drink-->
-    <string name="drink_name_express_martini">Express Martini</string>
-    <string name="drink_preparation_express_martini">"Preparation:\n"First there you have to cool the glass with ice, rotating it for a few seconds to have a better cooling of it. Add ½ ounce of coffee liqueur, ½ ounce of gum, 1 ounce of espresso to the shaker, add 1 1/2 ounces of vodka, add 3 to 4 ice cubes and shake. Remove the ice from the glass and add the cocktail to it, then decorate with coffee beans.</string>
-    <string name="drink_description_express_martini">If you like coffee, a well-made Espresso Martini will satisfy many, if not all, senses. Just the sound and rhythm of ice chilling your drink as you shake it vigorously, the mesmerizing sight of the freshly poured drink slowly resting, the smell and taste of the perfect balance of sweet and dry where all the ingredients are enhanced by the vodka and finally the mouthfeel and the silky, thick foam on top.</string>
-
-    <string name="drink_unit_meas_grain_express_martini">"Grain."</string>
-    <string name="drink_unit_meas_cube_express_martini">"Cube."</string>
-    <string name="drink_unit_meas_oz_express_martini">"oz."</string>
-
-    <string name="drink_ingredients_coffee_liquor_express_martini">"Coffee liquor"</string>
-    <string name="drink_ingredients_eraser_express_martini">"Eraser"</string>
-    <string name="drink_ingredients_coffee_express_martini">"Coffee express"</string>
-    <string name="drink_ingredients_vodka_express_martini">"Vodka"</string>
-    <string name="drink_ingredients_cube_express_martini">"Ice Cubes"</string>
-    <string name="drink_ingredients_grain_coffee_express_martini">"Coffee"</string>
-
+    <string name="drink_name_express_martini">Martini Expreso</string>
+    <string name="drink_preparation_express_martini">"Preparación:\n"Primero ahí que enfriar la copa con hielo, girándolo por unos segundos para tener un mejor enfriamiento de esta. Agregar en la coctelera ½ oz de licor de café, ½ oz de goma, 1 oz de café expreso, agregar 1 1/2 oz de vodka, agregar 3 a 4 cubos de hielo y agitar. Retirar el hielo de la copa y agregar el coctel a esta, luego decorar con granos de café.</string>
+    <string name="drink_description_express_martini">Si te gusta el café, un Espresso Martini bien hecho satisfará muchos sentidos sino todos. Sólo el sonido y el ritmo del hielo enfriando tu bebida mientras la agitas vigorosamente, la vista hipnotizante de la bebida recién vertida reposando lentamente, el olor y el sabor del perfecto equilibrio de dulce y seco donde todos los ingredientes son realzados por el vodka y finalmente la sensación en la boca y la espuma sedosa y espesa en la parte superior.</string>
 
     <!-- Classic Tom Collins Drink-->
-    <string name="drink_name_tom_collins">Classic Tom Collins</string>
-    <string name="drink_preparation_tom_collins">"Preparation:\n"In a cocktail shaker add 1 oz of Goma, 1 oz of natural lemon juice, 2 oz of gin, add 3 ice cubes and shake very gently. Then add 3 ice cubes (3/4 of the glass) to a glass and transfer the contents of the shaker with the caterpillar strainer for better filtration, finish with Sparkling water, then decorate with a maraschino and a slice of lemon.</string>
-    <string name="drink_description_tom_collins">If you love gin, Tom Collins is for you. It is one of the most popular cocktails and at the same time very easy to make.</string>
-
-    <string name="drink_unit_meas_oz_tom_collins">"oz."</string>
-    <string name="drink_unit_meas_cube_tom_collins">"Cube."</string>
-    <string name="drink_unit_meas_to_crown_tom_collins">"To Crown."</string>
-
-    <string name="drink_ingredients_eraser_tom_collins">"Eraser"</string>
-    <string name="drink_ingredients_lemon_juice_tom_collins">"Lemon Juice"</string>
-    <string name="drink_ingredients_gin_tom_collins">"Geneva"</string>
-    <string name="drink_ingredients_cube_tom_collins">"Ice cubes"</string>
-    <string name="drink_ingredients_water_tom_collins">"Carbonated water"</string>
-
+    <string name="drink_name_tom_collins">Clásico Tom Collins</string>
+    <string name="drink_preparation_tom_collins">"Preparación:\n"En una coctelera agregar 1 oz de Goma, 1 oz jugo de limón natural, 2 oz de ginebra, agregar 3 cubos de hielo y agitar muy suave. Luego agregar en un vaso 3 cubos de hielo (3/4 del vaso) y trasvasijar el contenido de la coctelera con el colador oruga para una mejor filtración, terminar con agua Gasificada, luego decorar con un marrasquino y una rebanada de limón.</string>
+    <string name="drink_description_tom_collins">Si te encanta la ginebra, el Tom Collins es para ti. Es uno de los cócteles más populares y a su vez facilísimos de elaborar.</string>
 
     <!-- Gin Tonic Drink-->
     <string name="drink_name_gin_tonic">Gin Tonic</string>
-    <string name="drink_preparation_gin_tonic">"Preparation:\n"In a glass add ice and stir to cool the glass, add a few pressed cloves to the orange slice and bury it in the orange, then add the orange to the glass, 2 oz of Geneva (Gin), add tonic water with the cocktail spoon so as not to break the bubbles, then decorate by adding some anise stars.</string>
-    <string name="drink_description_gin_tonic">The Gin Tonic is a cocktail made with gin, tonic water and citrus peels. It is believed to have been first created in the 18th century by Dutch and British colonial companies.</string>
+    <string name="drink_preparation_gin_tonic">"Preparación:\n"En una copa agregar hielo y revolver para enfriar la copa, agregar en la rodaja de naranja unos clavos de olor a presión y enterrarlo en la naranja, luego agregamos la naranja a la copa, 2 oz de Ginebra (Gin), agregar agua tónica con la cuchara coctelera para no romper las burbujas, luego decorar agregar unas estrellas de Anís.</string>
+    <string name="drink_description_gin_tonic">El Gin Tonic es un cóctel elaborado con ginebra, agua tónica y pieles de cítricos. Se cree que fue creado por primera vez en el siglo XVIII por empresas coloniales holandesas y británicas.</string>
 
-    <string name="drink_unit_meas_oz_gin_tonic">"oz."</string>
-    <string name="drink_unit_meas_cube_gin_tonic">"Cube."</string>
-    <string name="drink_unit_meas_to_crown_gin_tonic">"To crown."</string>
-    <string name="drink_unit_meas_slice_gin_tonic">"Slice."</string>
+    <!-- Old Fashioned-->
+    <string name="drink_name_old_fashioned">Old Fashioned</string>
+    <string name="drink_description_old_fashioned">Por derecho propio, se considera que el Old Fashioned es el primer cóctel de la historia. Sus orígenes se remontan a finales del siglo XVIII o primeros del siglo XIX, cumple sin fisuras aquella definición, y ha perdurado hasta la fecha con buen predicamento, a pesar de contar con más de 200 años a sus espaldas.  Es todo un emblema del mundo del cóctel. No en vano es un cóctel oficial de la IBA (International Bartenders Association).</string>
+    <string name="drink_preparation_old_fashioned">
+        "Preparación:\n"En un vaso Old Fashioned agregar una cucharada de Goma, 3 gotas de amargo de angosturas, 1 dash de agua mineral, revolver en el vaso y reservar para más adelante.
+        \n\nEn la coctelera agregar 4 cubos de hielo, 2 oz de whisky Blend. Ahora debemos pasar a la etapa de escanciado en donde hay que llevar la mescla de un lado para el otro con el colador oruga (unas 3 a 4 veces por lado), con esto lograremos la oxigenación del whisky.
+        \n\nEn el vaso Old Fashioned agregar el hielo cristalino y verter la mescla de la coctelera en el vaso, para luego adornar con un marrasquino y naranja.
+    </string>
 
-    <string name="drink_ingredients_cube_gin_tonic">"Ice Cube"</string>
-    <string name="drink_ingredients_orange_gin_tonic">"Orange"</string>
-    <string name="drink_ingredients_clove_gin_tonic">"Clove"</string>
-    <string name="drink_ingredients_gin_gin_tonic">"Geneva"</string>
-    <string name="drink_ingredients_water_gin_tonic">"Tonic water"</string>
-    <string name="drink_ingredients_anise_stars_gin_tonic">"Anise Stars"</string>
+    <!-- Rusty Clove -->
+    <string name="drink_name_rusty_clove">Clavo Oxidado</string>
+    <string name="drink_description_rusty_clove">Aromático, potente, ligeramente dulce, gracias a los aromas del azafrán, nuez moscada y miel. El Clavo Oxidado con Drambuie y whisky.</string>
+    <string name="drink_preparation_rusty_clove">
+        "Preparación:\n"En un vaso whiskero agregar 1 hielo cristalino, 2 oz de whisky, 1 oz de Drambue y decorar con una rodaja de naranja y 2 clavos de olor.
+    </string>
 
-    <string name="large_text_ingredientes">Ingrediente:\nPisco\nGoma\nHielo\nMenta</string>
+    <!-- Irish Coffee -->
+    <string name="drink_name_irish_coffee">Café irlandés</string>
+    <string name="drink_description_irish_coffee">El Irish Coffee es un cóctel cálido, rico y cremoso con un equilibrio perfecto de café amargo, azúcar dulce y suave whisky irlandés. La crema batida agrega una textura lujosa y aterciopelada.</string>
+    <string name="drink_preparation_irish_coffee">
+        "Preparación:\n"En el Geiger agregar el whisky 60 ml (2 oz), luego con un encendedor flamear el whisky (flama azul alrededor de este), dejar en ese estado hasta terminar la preparación.
+        \n\nEn un vaso agregar 2 oz de café expreso, apagar el fuego del whisky (hay que taparlo para quitarle el oxígeno).
+        \n\nAgregar el whisky del Geiger al vaso, agregar espuma de leche y para decorar con 3 granos de cafe.
+    </string>
+
+    <!-- Marga Chela -->
+    <string name="drink_name_marl_chela">Marga Chela</string>
+    <string name="drink_description_marl_chela">Margachela es una bebida fácil y deliciosa que combina el sabor de la margarita con una chela (cerveza) fría y refrescante. Puedes prepararlo en una licuadora como un frappé o en una coctelera para obtener un sabor más concentrado.</string>
+    <string name="drink_preparation_marl_chela">
+        "Preparation:\n"Escarchar la copa, ponemos sal en un plato y con un limón humedecer el borde de la copa, luego poner la copa boca abajo sobre el plato para que la sal se adhiera a ella.
+        \n\nEn la licuadora agregar el tequila, el Triple Sec, el jugo de limón, el hielo y el azúcar y prender la licuadora hasta que quede como una especie de granizado.
+        \n\nDespués se vierte la mezcla en la copa cuidando de no estropear el escarchado.
+        \n\nPoner una cerveza abierta dentro de la copa boca abajo, decoramos con una rodaja de limón y listo.
+    </string>
+
+    <!-- Crazy Coconut -->
+    <string name="drink_name_crazy_coconut">Crazy Coconut</string>
+    <string name="drink_description_crazy_coconut">The Crazy Coconut cocktail is a tropical treat that originated in the Caribbean. It is said to have been first created in the 1970s and quickly gained popularity among tourists visiting the region.</string>
+    <string name="drink_preparation_crazy_coconut">
+        "Preparation:\n"In the shaker, add the vodka, rum, tequila and mix until all the liquors are incorporated.
+        \n\nThen, add the coconut cream, lemon juice and ice. Shake again until all have been perfectly integrated.
+        \n\nThe mixture is ready when the liqueurs have merged with the coconut cream and lemon juice and the ice has frosted.
+        \n\nServe in a large glass or glass, garnish with a bombilla and a few lemon wedges.
+    </string>
+
+    <string name="large_text_ingredientes">Ingrediente:\n- Pisco 2oz\n- Goma 1oz\n -Hielo 3 cubos\n- Menta 6 hojas</string>
+
+    <!-- Unit Meas of drink-->
+    <string name="drink_unit_meas_oz">"oz."</string>
+    <string name="drink_unit_meas_cube">"Cubo."</string>
+    <string name="drink_unit_meas_dash">"Dash."</string>
+    <string name="drink_unit_meas_leaves">"Hojas."</string>
+    <string name="drink_unit_meas_to_crown">"Coronar."</string>
+    <string name="drink_unit_meas_frappe">"Frappe."</string>
+    <string name="drink_unit_meas_gr">"gr."</string>
+    <string name="drink_unit_meas_quantity">"cu."</string>
+    <string name="drink_unit_meas_grain">"Grain."</string>
+    <string name="drink_unit_meas_slice">"Lonja."</string>
+    <string name="drink_unit_meas_wedges">"Cuñas"</string>
+    <string name="drink_unit_meas_frost">"Frost"</string>
+
+    <!-- Ingredient of drink-->
+    <string name="drink_ingredient_ice_frappe">"Hielo Frappe"</string>
+    <string name="drink_ingredient_ice_cube">"Cubos de hielo"</string>
+    <string name="drink_ingredient_crystalline_ice">"Hielo Cristalino"</string>
+
+    <string name="drink_ingredient_mint">"Menta"</string>
+    <string name="drink_ingredient_orange">"Naranja"</string>
+    <string name="drink_ingredient_lemon">"Limón</string>
+    <string name="drink_ingredient_lemon_juice">"Jugo de Limón"</string>
+    <string name="drink_ingredient_pina_just">"Pulpa de Piña"</string>
+    <string name="drink_ingredient_maracuya_juice">"Pulpa de maracuyá"</string>
+    <string name="drink_ingredient_blueberries">"Arándanos</string>
+    <string name="drink_ingredient_maraschino">"Marrasquino y naranja"</string>
+
+    <string name="drink_ingredient_ginger_beer">"Cerveza de Jengibre"</string>
+    <string name="drink_ingredient_coffee_liquor">"Licor de Café"</string>
+    <string name="drink_ingredient_coffee_express">"Café Expreso"</string>
+    <string name="drink_ingredient_coffee_grain">"Grano de Café"</string>
+    <string name="drink_ingredient_milk_foam">"Espuma de Leche"</string>
+    <string name="drink_ingredient_coconut_cream">"Crema de coco"</string>
+
+    <string name="drink_ingredient_eraser">"Goma"</string>
+    <string name="drink_ingredient_clove">"Clavo de olor"</string>
+    <string name="drink_ingredient_mineral_water">"Agua Mineral"</string>
+    <string name="drink_ingredient_tonic_water">"Agua Tónica"</string>
+    <string name="drink_ingredient_basil_leaf_strawberry">"Albahaca"</string>
+    <string name="drink_ingredient_anise_stars">"Estrellas de Anís"</string>
+    <string name="drink_ingredient_misamplas">"Misamplas"</string>
+
+    <string name="drink_ingredient_wg_rum">"Ron Blanco o Dorado"</string>
+    <string name="drink_ingredient_triple_sex">"Triple Sex"</string>
+    <string name="drink_ingredient_w_rum">"Ron Blanco"</string>
+    <string name="drink_ingredient_vodka">"Vodka"</string>
+    <string name="drink_ingredient_gin">"Gin"</string>
+    <string name="drink_ingredient_tequila">"Tequila"</string>
+    <string name="drink_ingredient_angosturas">"Amargo de Angosturas"</string>
+    <string name="drink_ingredient_whisky">"Whisky Blend"</string>
+    <string name="drink_ingredient_irish">"Whisky irlandés"</string>
+    <string name="drink_ingredient_drambuie">"Drambuie"</string>
+    <string name="drink_ingredient_sugar">"Azucar"</string>
+    <string name="drink_ingredient_salt">"Sal"</string>
+    <string name="drink_ingredient_beer">"Cerveza"</string>
+
+    <!-- Unit Meas of Pizza-->
+    <string name="pizza_unit_meas_gr">"gr."</string>
+    <string name="pizza_unit_meas_ml">"ml."</string>
+    <string name="pizza_unit_meas_dust">"Dust."</string>
+    <string name="pizza_unit_meas_grease_dough">"Grease the dough."</string>
+    <string name="pizza_unit_meas_cm">"cm."</string>
+    <string name="pizza_unit_meas_cu">"cu."</string>
+
+    <!-- Size of Pizza-->
+    <string name="pizza_size_portion">"Portions"</string>
+    <string name="pizza_size_ration">"Ration"</string>
+    <string name="pizza_size_ration_of">"of"</string>
+    <string name="pizza_size_personnel">"Personnel"</string>
+    <string name="pizza_size_personal">"Personal"</string>
+    <string name="pizza_size_median">"Median"</string>
+    <string name="pizza_size_medium">"Medium"</string>
+    <string name="pizza_size_familiar">"Familiar"</string>
+    <string name="pizza_size_family">"Family"</string>
+    <string name="pizza_size_xl">"XL"</string>
+
+    <!-- Ingredient of Pizza-->
+    <string name="pizza_ingredient_mozzarella_cheese">"Mozzarella Cheese"</string>
+    <string name="pizza_ingredient_parmesan_cheese">"Queso Parmesan"</string>
+    <string name="pizza_ingredient_onion">"Onion"</string>
+    <string name="pizza_ingredient_red_onion">"Red Onion"</string>
+    <string name="pizza_ingredient_onion_powder">"Onion Powder"</string>
+    <string name="pizza_ingredient_onion_julienne">"Onion Julienne"</string>
+    <string name="pizza_ingredient_caramel_onion">"Caramel Onion"</string>
+    <string name="pizza_ingredient_olive_oil">"Olive Oil"</string>
+    <string name="pizza_ingredient_pepperoni">"Pepperoni"</string>
+    <string name="pizza_ingredient_salami">"Salami"</string>
+    <string name="pizza_ingredient_olive">"Olive"</string>
+    <string name="pizza_ingredient_corn">"Corn"</string>
+    <string name="pizza_ingredient_tomato_sauce">"Tomato Sauce"</string>
+    <string name="pizza_ingredient_tomato">"Tomato"</string>
+    <string name="pizza_ingredient_barbecue_sauce">"Barbecue Sauce"</string>
+    <string name="pizza_ingredient_basil">"Basil"</string>
+    <string name="pizza_ingredient_sausage">"Sausage"</string>
+    <string name="pizza_ingredient_minced_meat">"Minced Meat"</string>
+    <string name="pizza_ingredient_shredded_chicken">"Shredded Chicken"</string>
+    <string name="pizza_ingredient_pineapple">"Pineapple"</string>
+    <string name="pizza_ingredient_bacon">"Bacon"</string>
+    <string name="pizza_ingredient_ham">"Ham"</string>
+    <string name="pizza_ingredient_serrano_ham">"Serrano Ham"</string>
+    <string name="pizza_ingredient_oregano">"Oreganox"</string>
+    <string name="pizza_ingredient_garlic">"Garlic"</string>
+    <string name="pizza_ingredient_garlic_powder">"Garlic Powder"</string>
+    <string name="pizza_ingredient_flour">"Flour"</string>
+    <string name="pizza_ingredient_strong_flour">"Strong Flour"</string>
+    <string name="pizza_ingredient_corn_flour">"Corn Flour"</string>
+    <string name="pizza_ingredient_water">"Water"</string>
+    <string name="pizza_ingredient_baking_powder">"Baking Powder"</string>
+    <string name="pizza_ingredient_sugar">"Sugar"</string>
+    <string name="pizza_ingredient_salt">"Salt"</string>
+    <string name="pizza_ingredient_yeast">"Baking Powder"</string>
+    <string name="pizza_ingredient_semolina">"Semolina"</string>
+    <string name="pizza_ingredient_arugula">"Arugula"</string>
+
+    <!-- Classic Mojito Drink-->
+    <string name="pizza_name_margarita">Margarita Pizza</string>
+    <string name="pizza_description_margarita">You could say it is the mother of all pizzas. In fact, some Italian pizza masters claim that there are only two true kinds of pizza: the Margherita pizza and the Neapolitan pizza. We like to celebrate any event with a good pizza, especially if it is International Pizza Day.</string>
+    <string name="pizza_preparation_margarita">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
+    <!-- Pizza Nico-->
+    <string name="pizza_name_nico">Nico Pizza</string>
+    <string name="pizza_description_nico">It is a creation of the house.</string>
+    <string name="pizza_preparation_nico">"Preparation:\n"Add the strong flour, corn flour, orning powder, garlic powder, onion powder into a bowl.
+        \n\nStir to gather all the products and then make a volcano with the flour to incorporate the water, sugar and yeast.
+        \n\nStir the mixture with a spoon and then add the salt, continue mixing to add the olive oil.
+        \n\nMix everything for a few minutes, when this mixture take out and mix by hand for about 10 to 15 minutes (if the dough is very fresh you can add flour before kneading).
+        \n\nIn a bowl add the flour and cover with parchment paper, wait between 50 minutes to 1 hour at room temperature.
+        \n\nTake the dough out of the container and now you have to degas it (crush the dough to remove the air), crush it with your fingers and then cut it into 2.
+        \n\nBag the dough from the edges to the center and then turn it until it forms the balls.
+        \n\nNow you have to leave the balls on lightened paper for 1 hour so that it rests and increases its size (you can add flour below and above the dough so that it does not dry out).
+        \n\nPreheat the oven to 270°, add semolina in the place where the dough is going to form and then leave the dough on top of it, stretch with your fingers to shape the dough. Twist with your fingers to give it a better shape.
+        \n\nAdd the tomato sauce, mozzarella cheese, ham and pineapple.
+        \n\nAdd the pizza to the oven for about 7 minutes.
+    </string>
+
+    <!-- Italian Pizza-->
+    <string name="pizza_name_italian">Italian Pizza</string>
+    <string name="pizza_description_italian">The history of Italian pizza dates back to the city of Naples, where it became popular in the seventeenth century as a dish among humble inhabitants. At the end of the eighteenth century, pizza became a symbol of contemporary Italian gastronomy.</string>
+    <string name="pizza_preparation_italian">"Preparation:\n"Sift the two flours so that they mix well.
+        \n\nPut the yeast in a large bowl and dissolve it with all the water.
+        \n\nAdd 250g of flour and mix with a wooden spoon for a couple of minutes until the mixture is smooth and homogeneous.
+        \n\nAdd the remaining flour, oil and salt. Mix all the ingredients with the spoon and then use one hand, with the other hand hold the bowl. The dough will turn out quite sticky, but it is normal.
+        \n\nWash your hands and smear a large work surface with a little oil. Pour the pizza dough here. If you have oily hands, it will help you not to stick the dough too much.
+        \n\nWork the dough for about 5 minutes, with one hand hold the dough by one end and with the base of the other hand stretch the dough, then fold it over again. Repeat these movements several times. You will notice how the dough incorporates air and becomes more and more elastic.
+        \n\nBrush a clean bowl with oil and place the dough inside.
+        \n\nCover it with a cloth and let it rest for 15 minutes. After this time you will notice the dough with a different appearance, smoother, more elastic and less sticky.
+        \n\nThe folded phases that come now are very important to get our dough to encompass more air and to structure it. Now you have to make two folds, gently stretch the dough and fold it on itself, turn it over so that it stays in front of you vertically and repeat another fold.
+        \n\nPlace the dough back in the bowl and cover it with a cloth. Repeat this operation another two times at 15-minute intervals, always very gently. When you are done with the three rests and corresponding folds, put the dough back in the bowl, cover it tightly with cling film. Let it rest for 2-3 hours at room temperature then and put it in the coldest part of the refrigerator to rest for at least 24 hours.
+    </string>
+
+    <!-- Nicolas-style pizza dough -->
+    <string name="pizza_name_dough_pizza">Nicolas-style pizza dough</string>
+    <string name="pizza_description_dough_pizza">It is a dough that was created by failure and error, trying different methods of preparation and ingredients.</string>
+    <string name="pizza_preparation_dough_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
+    <!-- Napolitan-style pizza dough -->
+    <string name="pizza_name_dough_napolitan_pizza">Napolitan-style pizza dough</string>
+    <string name="pizza_description_dough_napolitan_pizza">The Neapolitan-style pizza dough is the traditional base of pizza originating from Naples, Italy, and is characterized by its simplicity, airy texture, and slightly tangy flavor.</string>
+    <string name="pizza_preparation_dough_napolitan_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
+    <!-- Basic-style pizza dough -->
+    <string name="pizza_name_dough_basic_pizza">Basic-style pizza dough</string>
+    <string name="pizza_description_dough_basic_pizza">The basic pizza dough is a simple and versatile preparation made with a few common ingredients. It is used as a base for many styles of homemade and commercial pizza. It has a soft and elastic texture before baking, and when cooked, it can be crispy on the outside and tender on the inside, depending on the thickness and cooking.</string>
+    <string name="pizza_preparation_dough_basic_pizza">"Preparation:\n"For this amazing Margherita pizza, the first thing you need to do is get all the ingredients ready, these are for a large pizza.
+        \n\nThe first thing we are going to prepare is the dough, for this place the flour on a flat surface and form a volcano. Around add salt and pepper to taste, in the center form a small hole and place the yeast and a pinch of white sugar there, this to help the yeast ferment faster.
+        \n\nThen add the warm water and mix only with the yeast, when it starts to foam you can mix all the flour with the water.
+        \n\nMix the pizza dough very well for about 10 minutes until you have a compact, homogeneous and smooth dough. If you notice that the dough is too hard, add a little more water.
+        \n\nPlace the pizza dough in a bowl with a little olive oil and cover with transparent kitchen paper. Let it rise for 30 minutes.
+        \n\nAfter 30 minutes, roll out the dough on a flat surface and add flour so that it does not stick. Place on a baking tray with a little flour and cover the dough with the tomato paste and add thyme to taste.
+        \n\nThe margherita pizza is a very classic pizza that only has tomato cheese and basil, so you must place a layer of grated mozzarella cheese, a few slices of tomato and add a little salt to taste. Bake for 10 minutes at 175ºC.
+        \n\nServe and taste this delicious margherita pizza with friends or family. If you liked this recipe or have any questions, leave us your comments.
+    </string>
+
 </resources>

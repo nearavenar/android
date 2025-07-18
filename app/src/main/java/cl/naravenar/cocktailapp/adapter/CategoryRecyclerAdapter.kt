@@ -16,7 +16,6 @@ import cl.naravenar.cocktailapp.model.DrinkModel
 import cl.naravenar.cocktailapp.service.CocktailService
 import cl.naravenar.cocktailapp.ui.cocktail.detail.DrinkFragment
 import cl.naravenar.cocktailapp.utils.DrinkUtil
-import com.google.android.material.textfield.TextInputEditText
 
 class CategoryRecyclerAdapter(cocktailsList: List<CategoryModel>, context: Context) : RecyclerView.Adapter<CategoryRecyclerAdapter.CocktailViewHolder>() {
 
@@ -26,7 +25,7 @@ class CategoryRecyclerAdapter(cocktailsList: List<CategoryModel>, context: Conte
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CocktailViewHolder {
         cocktailService = CocktailService(context)
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.card_view_cocktail, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.card_view_category_cocktail, parent, false)
         val evh: CategoryRecyclerAdapter.CocktailViewHolder = CategoryRecyclerAdapter.CocktailViewHolder(view)
         return evh
     }
@@ -65,9 +64,9 @@ class CategoryRecyclerAdapter(cocktailsList: List<CategoryModel>, context: Conte
         }
 
 
-        var descripction= cocktailService.findDrinkByIdCategoriaXml(category.getId())
+        var descripction= cocktailService.findDrinkByIdCategoria(category.getId())
 
-        holder.cocktailTitle.text = category.getName()
+         holder.cocktailTitle.text = category.getName()
         if (drink != null) {
             holder.cocktailDescription.text = DrinkUtil().detailsDrinks(descripction)
         }

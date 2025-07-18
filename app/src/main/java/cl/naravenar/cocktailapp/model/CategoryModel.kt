@@ -1,13 +1,10 @@
 package cl.naravenar.cocktailapp.model
 
 import android.os.Parcelable
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName = "category")
-data class CategoryModel (@PrimaryKey private var id: Long = 0,
+data class CategoryModel (private var id: Long = 0,
                      private var name: String,
                      private var status: Boolean,
                      private var image: String) : Parcelable {

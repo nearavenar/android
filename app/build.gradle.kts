@@ -59,22 +59,10 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     ksp ("com.github.bumptech.glide:ksp:4.16.0")
 
-    implementation("androidx.room:room-runtime:$roomVersion")
-    ksp("androidx.room:room-compiler:$roomVersion")
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.google.code.gson:gson:2.8.7")
-
-    //var room_version = "2.6.1"
-    //var room_coroutines_version = "1.3.9"
-    //implementation("androidx.room:room-runtime:$room_version")//dependencya de room
-    //annotationProcessor("androidx.room:room-compiler:$room_version")//compilador de room
-    //kapt("androidx.room:room-compiler:$room_version")
-    //implementation("androidx.room:room-coroutines:1.3.9")//le dice lo que va a implementar como las corutinas, (puede ser de cualquier libreria)
-    //implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
-    //implementation("androidx.room:room-ktx:$room_coroutines_version")//Le dice
 
 }
